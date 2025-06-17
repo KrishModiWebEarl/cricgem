@@ -13,13 +13,18 @@ export default function Navbar() {
   };
 
   return (
-    <header className="absolute top-0 left-0 right-0 z-50 px-6 py-4">
+    <header className="absolute top-0 left-0 right-0 z-50 px-6 py-4 bg-[#1b1253]">
       <nav className="flex items-center justify-between max-w-7xl mx-auto">
-        <div className="flex items-center space-x-2">
-          <div className="w-10 h-10 bg-[#fef0b7] rounded-lg flex items-center justify-center">
-            <div className="w-6 h-6 bg-[#1b1253] rounded"></div>
-          </div>
-        </div>
+        <Link href="/" className="flex items-center space-x-2">
+          <Image
+            src="/placeholder-logo.png"
+            alt="CricGem Logo"
+            width={40}
+            height={40}
+            className="w-10 h-10 object-contain"
+          />
+          <span className="text-white text-2xl font-bold">CRICGEM</span>
+        </Link>
         <div className="hidden md:flex items-center space-x-8 text-white">
           <Link href="/how-to-play" className="hover:text-[#fef0b7] transition-colors">
             How to Play
