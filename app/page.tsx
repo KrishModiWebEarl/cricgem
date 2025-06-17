@@ -1,3 +1,5 @@
+'use client';
+
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -14,9 +16,17 @@ import {
   Instagram,
   Facebook,
   Play,
+  Minus
 } from "lucide-react"
+import { useState } from "react"
 
 export default function CricGemLanding() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const toggleOpen = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -168,24 +178,57 @@ export default function CricGemLanding() {
           <h2 className="text-4xl font-bold text-center text-[#605a87] mb-16">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {[
-              "How to deposit the amount?",
-              "How to withdraw the winning amount?",
-              "Is refund for the cancelled match get at what time?",
-              "What is Real contest?",
-              "When the KYC is approved",
-            ].map((question, index) => (
-              <Card key={index} className="border border-[#d9d9d9]">
-                <CardContent className="p-6 flex items-center justify-between">
-                  <span className="text-[#605a87] font-medium">{question}</span>
-                  <Plus className="w-5 h-5 text-[#605a87]" />
-                </CardContent>
-              </Card>
-            ))}
+              {
+                question: "How to deposit the amount?",
+                answer: "You can deposit money into your CricGem account using various payment methods including UPI, Net Banking, Credit/Debit Cards, and E-wallets. Go to the 'Add Cash' section in your account to proceed with the deposit."
+              },
+              {
+                question: "How to withdraw the winning amount?",
+                answer: "You can withdraw your winnings by going to the 'Withdraw' section in your account. Enter the amount you wish to withdraw and select your preferred withdrawal method. Withdrawals are typically processed within 24-48 hours."
+              },
+              {
+                question: "Is refund for the cancelled match get at what time?",
+                answer: "In case of a cancelled match, all entry fees will be refunded to your CricGem account within 7 working days. The exact time may vary depending on your payment method."
+              },
+              {
+                question: "What is Real contest?",
+                answer: "Real contests are paid contests where you can win real cash prizes. These contests have an entry fee and offer cash rewards based on your team's performance in real cricket matches."
+              },
+              {
+                question: "When the KYC is approved?",
+                answer: "KYC verification typically takes 24-72 hours to complete after submission of all required documents. You'll receive a notification once your KYC is approved. KYC is mandatory for withdrawing winnings."
+              }
+            ].map((faq, index) => {
+              const isOpen = openIndex === index;
+              
+              return (
+                <Card key={index} className="border border-[#d9d9d9] overflow-hidden">
+                  <CardContent className="p-0">
+                    <div 
+                      className="p-6 flex items-center justify-between cursor-pointer hover:bg-gray-50 transition-colors"
+                      onClick={() => toggleOpen(index)}
+                    >
+                      <span className="text-[#605a87] font-medium">{faq.question}</span>
+                      <div className={`transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''}`}>
+                        {isOpen ? (
+                          <Minus className="w-5 h-5 text-[#605a87]" />
+                        ) : (
+                          <Plus className="w-5 h-5 text-[#605a87]" />
+                        )}
+                      </div>
+                    </div>
+                    {isOpen && (
+                      <div className="px-6 pb-6 pt-0 text-gray-600">
+                        {faq.answer}
+                      </div>
+                    )}
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
-
-      {/* Footer */}
       
     </div>
   )
