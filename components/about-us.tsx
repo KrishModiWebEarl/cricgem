@@ -65,9 +65,9 @@ export default function Component() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>
         <div className="relative max-w-6xl mx-auto px-6 z-10">
           <div className="text-center mb-16">
-            <h1 className="mt-16 text-4xl md:text-5xl font-bold text-white mb-4">About Us</h1>
-            <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto">
-              We craft worlds where cricket passion meets fantasy excitement
+            <h1 className="mt-16 text-4xl md:text-5xl font-semibold font-['Poppins'] text-white mb-4">About Us</h1>
+            <p className="text-lg md:text-xl font-['Poppins'] text-white/90 max-w-2xl mx-auto">
+             We craft worlds where dragons fly, heroes rise, and destiny awaits every player.
             </p>
           </div>
         </div>
@@ -77,10 +77,10 @@ export default function Component() {
       <div className="max-w-6xl mx-auto px-6 py-12 space-y-12">
         {/* Who we are Section */}
         <section className="bg-[#605a87] rounded-2xl p-8 text-white relative overflow-visible border border-black">
-          <div className="absolute -top-6 left-6 inline-block bg-white text-[#605a87] px-6 py-3 rounded-lg text-sm font-medium z-10 border-black">
+          <div className="absolute -top-6 left-6 inline-block bg-white text-[#605a87] px-6 py-3 rounded-lg text-sm font-semibold z-10 border border-black">
             Who we are
           </div>
-          <div className="flex flex-col lg:flex-row items-center gap-8 pt-12">
+          <div className="flex flex-col lg:flex-row items-center gap-8">
             <div className="flex-1 order-1 lg:order-1">
               <div className="space-y-4 text-sm leading-relaxed">
                 <p>CricGem is the flagship product of Fantasy Sports WebEarl Technologies Private Limited.</p>
@@ -96,7 +96,11 @@ export default function Component() {
             </div>
             <div className="flex-shrink-0 order-2 lg:order-2">
               <div className="flex items-center justify-center">
-                <img src="/Assets/logo.png" alt="CricGem Logo" className="w-40 h-40 object-contain" />
+                <img 
+                  src="/Assets/logo.png" 
+                  alt="CricGem Logo" 
+                  className="w-64 h-64 object-contain" 
+                />
               </div>
             </div>
           </div>
@@ -104,12 +108,12 @@ export default function Component() {
 
         {/* Our Mission Section */}
         <section className="bg-[#c8b5e8] rounded-2xl p-8 relative overflow-visible border border-black">
-          <div className="absolute -top-6 right-6 inline-block bg-white text-[#605a87] px-6 py-3 rounded-lg text-sm font-medium z-10 border-black">
+          <div className="absolute -top-6 right-6 inline-block bg-white text-[#1b1253] px-6 py-3 rounded-lg text-sm font-semibold z-10 border border-black">
             Our Mission
           </div>
-          <div className="flex flex-col lg:flex-row items-center gap-8 pt-12">
+          <div className="flex flex-col lg:flex-row items-center gap-8">
             <div className="flex-1 order-1 lg:order-1">
-              <div className="w-64 h-48 relative flex items-center justify-center mx-auto lg:mx-0">
+              <div className="w-64 h-50 relative flex items-center justify-center mx-auto lg:mx-0">
                 <img
                   src="/assets/About/ball.png"
                   alt="Sports Illustration"
@@ -152,7 +156,7 @@ export default function Component() {
               </div>
             </div>
 
-            <div className="flex-shrink-0 order-2">
+            <div className="flex-shrink-0 order-2 mx-auto md:mx-0">
               <div className="w-64 h-64 mb-2 relative flex items-center justify-center">
                 <img
                   src="/assets/About/player.png"
