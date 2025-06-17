@@ -2,7 +2,8 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import {
+import AboutUs from "../components/about-us.tsx"
+import { 
   ChevronLeft,
   ChevronRight,
   Mail,
@@ -33,7 +34,7 @@ export default function CricGemLanding() {
             <Link href="#" className="hover:text-[#fef0b7] transition-colors">
               Point System
             </Link>
-            <Link href="#" className="hover:text-[#fef0b7] transition-colors">
+            <Link href="/about" className="hover:text-[#fef0b7] transition-colors">
               About Us
             </Link>
             <Link href="#" className="hover:text-[#fef0b7] transition-colors">
