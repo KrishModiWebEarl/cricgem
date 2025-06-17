@@ -23,9 +23,9 @@ export default function CricGemLanding() {
       
       {/* Hero Section */}
       <section className="relative h-screen bg-gradient-to-br from-[#1b1253] via-[#140b40] to-[#1d1459] overflow-hidden">
-        <div className="absolute inset-0">
+        {/* <div className="absolute inset-0">
           <Image src="/cricgem-hero.png" alt="Cricket Stadium" fill className="object-cover opacity-60" />
-        </div>
+        </div> */}
         <div className="relative z-10 flex items-center justify-center h-full px-6">
           <div className="text-center text-white max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-8">

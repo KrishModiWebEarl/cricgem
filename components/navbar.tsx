@@ -35,15 +35,15 @@ export default function Navbar() {
           <Image
             src="/Assets/logo.png"
             alt="CricGem Logo"
-            width={65}
-            height={65}
+            width={50}
+            height={50}
             className="w-15 h-15 object-contain"
           />
           {/* <span className="text-white text-2xl font-bold">CRICGEM</span> */}
         </Link>
         <div className="hidden md:flex items-center space-x-8 text-white">
           {[
-            { href: "/how-to-play", label: "Play" },
+            { href: "/how-to-play", label: "How-to-Play" },
             { href: "/point-system", label: "Point System" },
             { href: "/about", label: "About Us" },
             { href: "/blog", label: "Blog" },
