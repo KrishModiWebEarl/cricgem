@@ -27,7 +27,7 @@ export default function Navbar() {
         </Link>
         <div className="hidden md:flex items-center space-x-8 text-white">
           <Link href="/how-to-play" className="hover:text-[#fef0b7] transition-colors">
-            How to Play
+             Play
           </Link>
           <Link href="/point-system" className="hover:text-[#fef0b7] transition-colors">
             Point System
