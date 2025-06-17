@@ -6,30 +6,7 @@ export default function Component() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="bg-[#1b1253] text-white">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-[#fef0b7] rounded-full flex items-center justify-center">
-              <span className="text-[#1b1253] font-bold text-sm">CG</span>
-            </div>
-            <span className="font-bold text-lg">CRICGEM</span>
-          </div>
-          <nav className="hidden md:flex space-x-8">
-            <Link href="#" className="hover:text-[#fef0b7] transition-colors">
-              How to Play
-            </Link>
-            <Link href="#" className="hover:text-[#fef0b7] transition-colors">
-              Point System
-            </Link>
-            <Link href="#" className="hover:text-[#fef0b7] transition-colors">
-              About Us
-            </Link>
-            <Link href="#" className="hover:text-[#fef0b7] transition-colors">
-              Blog
-            </Link>
-          </nav>
-        </div>
-      </header>
+      
 
       {/* Hero Section */}
       <section className="relative h-[400px] bg-gradient-to-r from-[#1b1253] to-[#605a87] flex items-center justify-center text-white">
@@ -48,7 +25,7 @@ export default function Component() {
             <p>
               The 'How To Play' section guides our users about the fantasy teams and how to play fantasy sports on
               CRICGEM. Follow the steps mentioned below to begin your fantasy sports winning journey on the CRICGEM
-              fantasy sports application. In this segment, we will cover 'How To Play Fantasy Cricket on CRICGEM app.
+              fantasy sports application. In this segment, we will cover 'How To Play Fantasy Cricket on CRICGEM app.'
             </p>
             <p>
               Use your knowledge of the game to select 11 players for your fantasy cricket team. You can select up to 8
@@ -154,8 +131,7 @@ export default function Component() {
                 <div className="text-8xl font-bold text-[#c0c0c0] mb-4">4</div>
                 <h3 className="text-2xl font-bold text-[#000000] mb-4">Select Your Captain and Vice-Captain</h3>
                 <p className="text-[#5c5c5c] text-lg">
-                  After creating your Playing XI, select the captain and vice-captain that will help you earn extra
-                  points. The chosen captain will get 2x points during the match and the vice-captain will get x1.5
+                  The chosen captain will get 2x points during the match and the vice-captain will get x1.5
                   points
                 </p>
               </div>
@@ -188,70 +164,7 @@ export default function Component() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#1b1253] text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {/* Logo and Social */}
-            <div className="space-y-4">
-              <div className="flex items-center space-x-2">
-                <div className="w-10 h-10 bg-[#fef0b7] rounded-full flex items-center justify-center">
-                  <span className="text-[#1b1253] font-bold text-sm">CG</span>
-                </div>
-                <span className="font-bold text-lg">CRICGEM</span>
-              </div>
-              <div className="flex space-x-4">
-                <Youtube className="w-6 h-6 hover:text-[#fef0b7] cursor-pointer" />
-                <Instagram className="w-6 h-6 hover:text-[#fef0b7] cursor-pointer" />
-                <Facebook className="w-6 h-6 hover:text-[#fef0b7] cursor-pointer" />
-                <Play className="w-6 h-6 hover:text-[#fef0b7] cursor-pointer" />
-              </div>
-            </div>
-
-            {/* Quick Links */}
-            <div>
-              <h4 className="font-bold text-lg mb-4">QUICK LINKS</h4>
-              <div className="space-y-2">
-                <Link href="#" className="block hover:text-[#fef0b7]">
-                  About Us
-                </Link>
-                <Link href="#" className="block hover:text-[#fef0b7]">
-                  Privacy Policy
-                </Link>
-                <Link href="#" className="block hover:text-[#fef0b7]">
-                  Terms & Conditions
-                </Link>
-                <Link href="#" className="block hover:text-[#fef0b7]">
-                  Contact Us
-                </Link>
-              </div>
-            </div>
-
-            {/* Resources */}
-            <div>
-              <h4 className="font-bold text-lg mb-4">Resources</h4>
-              <div className="space-y-2">
-                <Link href="#" className="block hover:text-[#fef0b7]">
-                  Blogs
-                </Link>
-              </div>
-            </div>
-
-            {/* Company */}
-            <div>
-              <h4 className="font-bold text-lg mb-4">Company</h4>
-              <div className="space-y-2">
-                <Link href="#" className="block hover:text-[#fef0b7]">
-                  Partner with us
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="border-t border-[#605a87] mt-8 pt-8 text-center">
-            <p className="text-[#989898]">Copyright © 2025 cricgem.in</p>
-          </div>
-        </div>
-      </footer>
+      
     </div>
   )
 }

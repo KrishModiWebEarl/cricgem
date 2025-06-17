@@ -22,29 +22,7 @@ export default function Component() {
   return (
     <div className="min-h-screen bg-[#fffcfc]">
       {/* Header */}
-      <header className="bg-[#1b1253] px-6 py-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-12 h-12 bg-[#fef0b7] rounded-full flex items-center justify-center">
-              <div className="text-[#1b1253] font-bold text-sm">CRICGEM</div>
-            </div>
-          </div>
-          <nav className="hidden md:flex items-center gap-8">
-            <Link href="#" className="text-white hover:text-[#fef0b7] transition-colors">
-              How to Play
-            </Link>
-            <Link href="#" className="text-white hover:text-[#fef0b7] transition-colors">
-              Point System
-            </Link>
-            <Link href="#" className="text-white hover:text-[#fef0b7] transition-colors">
-              About Us
-            </Link>
-            <Link href="#" className="text-white hover:text-[#fef0b7] transition-colors">
-              Blog
-            </Link>
-          </nav>
-        </div>
-      </header>
+      
 
       {/* Hero Section */}
       <section className="relative h-64 bg-gradient-to-r from-[#1b1253]/80 to-[#494175]/80">
@@ -104,70 +82,7 @@ export default function Component() {
       </section>
   
         {/* Footer */}
-        <footer className="bg-[#1b1253] text-white mt-16">
-          <div className="max-w-7xl mx-auto px-6 py-12">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-              {/* Logo and Social */}
-              <div className="space-y-4">
-                <div className="flex items-center gap-2">
-                  <div className="w-12 h-12 bg-[#fef0b7] rounded-full flex items-center justify-center">
-                    <div className="text-[#1b1253] font-bold text-sm">CRICGEM</div>
-                  </div>
-                  <span className="text-2xl font-bold">CRICGEM</span>
-                </div>
-                <div className="flex gap-4">
-                  <Youtube className="w-6 h-6 hover:text-[#fef0b7] cursor-pointer transition-colors" />
-                  <Instagram className="w-6 h-6 hover:text-[#fef0b7] cursor-pointer transition-colors" />
-                  <Facebook className="w-6 h-6 hover:text-[#fef0b7] cursor-pointer transition-colors" />
-                  <Play className="w-6 h-6 hover:text-[#fef0b7] cursor-pointer transition-colors" />
-                </div>
-              </div>
-  
-              {/* Quick Links */}
-              <div>
-                <h4 className="text-lg font-semibold mb-4">QUICK LINKS</h4>
-                <div className="space-y-2">
-                  <Link href="#" className="block hover:text-[#fef0b7] transition-colors">
-                    About Us
-                  </Link>
-                  <Link href="#" className="block hover:text-[#fef0b7] transition-colors">
-                    Privacy Policy
-                  </Link>
-                  <Link href="#" className="block hover:text-[#fef0b7] transition-colors">
-                    Teams & Conditions
-                  </Link>
-                  <Link href="#" className="block hover:text-[#fef0b7] transition-colors">
-                    Contact us
-                  </Link>
-                </div>
-              </div>
-  
-              {/* Resources */}
-              <div>
-                <h4 className="text-lg font-semibold mb-4">Resources</h4>
-                <div className="space-y-2">
-                  <Link href="#" className="block hover:text-[#fef0b7] transition-colors">
-                    Blogs
-                  </Link>
-                </div>
-              </div>
-  
-              {/* Company */}
-              <div>
-                <h4 className="text-lg font-semibold mb-4">Company</h4>
-                <div className="space-y-2">
-                  <Link href="#" className="block hover:text-[#fef0b7] transition-colors">
-                    Partner with us
-                  </Link>
-                </div>
-              </div>
-            </div>
-  
-            <div className="border-t border-white/20 mt-8 pt-8 text-center">
-              <p className="text-white/80">Copyright © 2025 cricgem.in</p>
-            </div>
-          </div>
-        </footer>
+        
       </div>
     )
   }

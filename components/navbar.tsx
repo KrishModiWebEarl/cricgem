@@ -21,16 +21,16 @@ export default function Navbar() {
           </div>
         </div>
         <div className="hidden md:flex items-center space-x-8 text-white">
-          <Link href="#" className="hover:text-[#fef0b7] transition-colors">
+          <Link href="/how-to-play" className="hover:text-[#fef0b7] transition-colors">
             How to Play
           </Link>
-          <Link href="#" className="hover:text-[#fef0b7] transition-colors">
+          <Link href="/point-system" className="hover:text-[#fef0b7] transition-colors">
             Point System
           </Link>
           <Link href="/about" className="hover:text-[#fef0b7] transition-colors">
             About Us
           </Link>
-          <Link href="#" className="hover:text-[#fef0b7] transition-colors">
+          <Link href="/blog" className="hover:text-[#fef0b7] transition-colors">
             Blog
           </Link>
         </div>
@@ -47,16 +47,16 @@ export default function Navbar() {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-[#1b1253] px-6 py-4">
           <div className="flex flex-col space-y-4 text-white">
-            <Link href="#" className="block hover:text-[#fef0b7] transition-colors">
+            <Link href="/how-to-play" className="block hover:text-[#fef0b7] transition-colors">
               How to Play
             </Link>
-            <Link href="#" className="block hover:text-[#fef0b7] transition-colors">
+            <Link href="/point-system" className="block hover:text-[#fef0b7] transition-colors">
               Point System
             </Link>
             <Link href="/about" className="block hover:text-[#fef0b7] transition-colors">
               About Us
             </Link>
-            <Link href="#" className="block hover:text-[#fef0b7] transition-colors">
+            <Link href="/blog" className="block hover:text-[#fef0b7] transition-colors">
               Blog
             </Link>
           </div>

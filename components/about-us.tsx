@@ -6,30 +6,7 @@ export default function Component() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="bg-[#1b1253] text-white px-6 py-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-[#ffce31] rounded-full flex items-center justify-center">
-              <span className="text-[#1b1253] font-bold text-sm">CG</span>
-            </div>
-            <span className="font-bold text-xl">CRICGEM</span>
-          </div>
-          <nav className="hidden md:flex items-center gap-8">
-            <a href="#" className="hover:text-[#ffce31] transition-colors">
-              How to Play
-            </a>
-            <a href="#" className="hover:text-[#ffce31] transition-colors">
-              Point System
-            </a>
-            <a href="#" className="text-[#ffce31]">
-              About Us
-            </a>
-            <a href="#" className="hover:text-[#ffce31] transition-colors">
-              Blog
-            </a>
-          </nav>
-        </div>
-      </header>
+      
 
       {/* Hero Section */}
       <section className="relative h-64 bg-gradient-to-r from-orange-400 to-blue-400 flex items-center justify-center">
@@ -218,72 +195,7 @@ export default function Component() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#1b1253] text-white py-12">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-              <div className="flex items-center gap-2 mb-6">
-                <div className="w-10 h-10 bg-[#ffce31] rounded-full flex items-center justify-center">
-                  <span className="text-[#1b1253] font-bold text-sm">CG</span>
-                </div>
-                <span className="font-bold text-xl">CRICGEM</span>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="font-bold text-lg mb-4">QUICK LINKS</h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="#" className="hover:text-[#ffce31] transition-colors">
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-[#ffce31] transition-colors">
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-[#ffce31] transition-colors">
-                    Teams & Conditions
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-[#ffce31] transition-colors">
-                    Contact us
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="font-bold text-lg mb-4">Resources</h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="#" className="hover:text-[#ffce31] transition-colors">
-                    Blogs
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="font-bold text-lg mb-4">Company</h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="#" className="hover:text-[#ffce31] transition-colors">
-                    Partner with us
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-white/20 mt-8 pt-8 text-center text-sm">
-            <p>Copyright © 2025 cricgem.in</p>
-          </div>
-        </div>
-      </footer>
+      
     </div>
   )
 }
