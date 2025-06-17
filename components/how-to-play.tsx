@@ -158,7 +158,7 @@ export default function Component() {
                 </div>
               </div>
               <div className="lg:w-1/2 text-center lg:text-left">
-                <div className="text-8xl font-bold text-[#e0e0e0] mb-4">6</div>
+                <div className="text-8xl font-bold text-[#e0e0e0] mb-4">5</div>
                 <h3 className="text-2xl font-bold text-[#000000] mb-4">Join The League</h3>
                 <p className="text-[#5c5c5c] text-lg">
                   As you are ready with your fantasy teams now, join the contest in your selected league and begin your

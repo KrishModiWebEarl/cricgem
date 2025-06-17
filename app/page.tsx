@@ -1,24 +1,20 @@
 'use client';
 
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import AboutUs from "../components/about-us"
-import { 
+import { useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { FaEnvelope, FaTelegramPlane, FaPhoneAlt } from 'react-icons/fa';
+
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+
+import {
   ChevronLeft,
   ChevronRight,
-  Mail,
-  MessageCircle,
-  Phone,
   Plus,
-  Youtube,
-  Instagram,
-  Facebook,
   Play,
   Minus
-} from "lucide-react"
-import { useState } from "react"
+} from 'lucide-react';
 
 export default function CricGemLanding() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -27,15 +23,16 @@ export default function CricGemLanding() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const supportOptions = [
+    { icon: FaEnvelope, title: "Mail Support", bg: "bg-[#423d6d]" },
+    { icon: FaTelegramPlane, title: "Telegram Support", bg: "bg-[#8f8bab]" },
+    { icon: FaPhoneAlt, title: "Call Support", bg: "bg-[#423d6d]" },
+  ];
+
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      
       {/* Hero Section */}
       <section className="relative h-screen bg-gradient-to-br from-[#1b1253] via-[#140b40] to-[#1d1459] overflow-hidden">
-        {/* <div className="absolute inset-0">
-          <Image src="/cricgem-hero.png" alt="Cricket Stadium" fill className="object-cover opacity-60" />
-        </div> */}
         <div className="relative z-10 flex items-center justify-center h-full px-6">
           <div className="text-center text-white max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-8">
@@ -63,7 +60,7 @@ export default function CricGemLanding() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center text-[#605a87] mb-16">
-            Steps to Download & Install the CricGem !
+            Steps to Download & Install the CricGem!
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[1, 2, 3].map((step) => (
@@ -148,7 +145,7 @@ export default function CricGemLanding() {
         </div>
       </section>
 
-      {/* Support System Section */}
+      {/* Support Section */}
       <section className="py-20 bg-gradient-to-br from-[#1b1253] via-[#140b40] to-[#1d1459]">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold text-white mb-4">Support System</h2>
@@ -156,11 +153,7 @@ export default function CricGemLanding() {
             "As we prioritize our customers, we've ensured multi-channel support is readily available for you"
           </p>
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {[
-              { icon: Mail, title: "Mail Support", bg: "bg-[#423d6d]" },
-              { icon: MessageCircle, title: "Telegram Support", bg: "bg-[#8f8bab]" },
-              { icon: Phone, title: "Call Support", bg: "bg-[#423d6d]" },
-            ].map((support, index) => (
+            {supportOptions.map((support, index) => (
               <Card key={index} className={`${support.bg} border-0 text-white`}>
                 <CardContent className="p-8 text-center">
                   <support.icon className="w-12 h-12 mx-auto mb-4" />
@@ -180,31 +173,31 @@ export default function CricGemLanding() {
             {[
               {
                 question: "How to deposit the amount?",
-                answer: "You can deposit money into your CricGem account using various payment methods including UPI, Net Banking, Credit/Debit Cards, and E-wallets. Go to the 'Add Cash' section in your account to proceed with the deposit."
+                answer: "You can deposit money into your CricGem account using various payment methods..."
               },
               {
                 question: "How to withdraw the winning amount?",
-                answer: "You can withdraw your winnings by going to the 'Withdraw' section in your account. Enter the amount you wish to withdraw and select your preferred withdrawal method. Withdrawals are typically processed within 24-48 hours."
+                answer: "You can withdraw your winnings by going to the 'Withdraw' section in your account..."
               },
               {
                 question: "Is refund for the cancelled match get at what time?",
-                answer: "In case of a cancelled match, all entry fees will be refunded to your CricGem account within 7 working days. The exact time may vary depending on your payment method."
+                answer: "In case of a cancelled match, all entry fees will be refunded..."
               },
               {
                 question: "What is Real contest?",
-                answer: "Real contests are paid contests where you can win real cash prizes. These contests have an entry fee and offer cash rewards based on your team's performance in real cricket matches."
+                answer: "Real contests are paid contests where you can win real cash prizes..."
               },
               {
                 question: "When the KYC is approved?",
-                answer: "KYC verification typically takes 24-72 hours to complete after submission of all required documents. You'll receive a notification once your KYC is approved. KYC is mandatory for withdrawing winnings."
+                answer: "KYC verification typically takes 24-72 hours..."
               }
             ].map((faq, index) => {
               const isOpen = openIndex === index;
-              
+
               return (
                 <Card key={index} className="border border-[#d9d9d9] overflow-hidden">
                   <CardContent className="p-0">
-                    <div 
+                    <div
                       className="p-6 flex items-center justify-between cursor-pointer hover:bg-gray-50 transition-colors"
                       onClick={() => toggleOpen(index)}
                     >
@@ -229,7 +222,6 @@ export default function CricGemLanding() {
           </div>
         </div>
       </section>
-      
     </div>
-  )
+  );
 }
