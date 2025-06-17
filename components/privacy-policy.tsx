@@ -11,7 +11,7 @@ export default function Component() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center">
             <Image
-              src="/placeholder.svg?height=40&width=40"
+              src="Assets/policies/bat.jpeg"
               alt="Cricgem Logo"
               width={40}
               height={40}

@@ -38,6 +38,7 @@ export default function Component() {
   ]
 
   const [openSection, setOpenSection] = useState<string | null>(null)
+  const [selectedFormat, setSelectedFormat] = useState<string>(formatTabs[0])
 
   const sectionData: PointSectionData = {
     "Batting Points": {
@@ -189,9 +190,10 @@ export default function Component() {
               <Button
                 key={format}
                 variant="ghost"
+                onClick={() => setSelectedFormat(format)}
                 className={
                   `px-6 py-2 rounded-md font-medium text-base ` +
-                  (index === 0 ? "bg-[#494175] text-white hover:bg-[#494175]/90" : "text-[#000000] hover:bg-gray-100")
+                  (format === selectedFormat ? "bg-[#494175] text-white hover:bg-[#494175]/90" : "text-[#000000] hover:bg-gray-100")
                 }
               >
                 {format}
@@ -218,17 +220,17 @@ export default function Component() {
                     {sectionData[section]?.table && sectionData[section].table.length > 0 && (
                       <div className="overflow-x-auto mb-4">
                         <table className="min-w-full divide-y divide-gray-200">
-                          <thead className="bg-gray-50">
+                          <thead className="bg-[#494175]">
                             <tr>
                               <th
                                 scope="col"
-                                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                                className="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider"
                               >
                                 Type
                               </th>
                               <th
                                 scope="col"
-                                className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider"
+                                className="px-6 py-3 text-right text-xs font-medium text-white uppercase tracking-wider"
                               >
                                 Point
                               </th>
