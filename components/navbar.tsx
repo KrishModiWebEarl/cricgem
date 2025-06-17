@@ -2,42 +2,60 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import clsx from "clsx"; // Optional, for cleaner className conditionals
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
-    <header className="absolute top-0 left-0 right-0 z-50 px-6 py-4 bg-[#1b1253]">
+    <header
+      className={clsx(
+        "fixed top-0 left-0 right-0 z-50 px-6 py-4 transition-colors duration-300",
+        isScrolled ? "bg-blue-900/60 backdrop-blur-md" : "bg-[#1b1253]"
+      )}
+    >
       <nav className="flex items-center justify-between max-w-7xl mx-auto">
         <Link href="/" className="flex items-center space-x-2">
           <Image
-            src="/placeholder-logo.png"
+            src="/Assets/logo.png"
             alt="CricGem Logo"
-            width={40}
-            height={40}
-            className="w-10 h-10 object-contain"
+            width={65}
+            height={65}
+            className="w-15 h-15 object-contain"
           />
-          <span className="text-white text-2xl font-bold">CRICGEM</span>
+          {/* <span className="text-white text-2xl font-bold">CRICGEM</span> */}
         </Link>
         <div className="hidden md:flex items-center space-x-8 text-white">
-          <Link href="/how-to-play" className="hover:text-[#fef0b7] transition-colors">
-             Play
-          </Link>
-          <Link href="/point-system" className="hover:text-[#fef0b7] transition-colors">
-            Point System
-          </Link>
-          <Link href="/about" className="hover:text-[#fef0b7] transition-colors">
-            About Us
-          </Link>
-          <Link href="/blog" className="hover:text-[#fef0b7] transition-colors">
-            Blog
-          </Link>
+          {[
+            { href: "/how-to-play", label: "Play" },
+            { href: "/point-system", label: "Point System" },
+            { href: "/about", label: "About Us" },
+            { href: "/blog", label: "Blog" },
+          ].map(({ href, label }) => (
+            <Link
+              key={href}
+              href={href}
+              className="hover:underline underline-offset-4 decoration-[#fef0b7] transition-colors"
+            >
+              {label}
+            </Link>
+          ))}
         </div>
 
         {/* Mobile menu button */}
@@ -52,21 +70,23 @@ export default function Navbar() {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-[#1b1253] px-6 py-4">
           <div className="flex flex-col space-y-4 text-white">
-            <Link href="/how-to-play" className="block hover:text-[#fef0b7] transition-colors">
-              How to Play
-            </Link>
-            <Link href="/point-system" className="block hover:text-[#fef0b7] transition-colors">
-              Point System
-            </Link>
-            <Link href="/about" className="block hover:text-[#fef0b7] transition-colors">
-              About Us
-            </Link>
-            <Link href="/blog" className="block hover:text-[#fef0b7] transition-colors">
-              Blog
-            </Link>
+            {[
+              { href: "/how-to-play", label: "How to Play" },
+              { href: "/point-system", label: "Point System" },
+              { href: "/about", label: "About Us" },
+              { href: "/blog", label: "Blog" },
+            ].map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                className="block hover:underline underline-offset-4 decoration-[#fef0b7] transition-colors"
+              >
+                {label}
+              </Link>
+            ))}
           </div>
         </div>
       )}
     </header>
   );
-} 
+}

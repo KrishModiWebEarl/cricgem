@@ -21,7 +21,7 @@ export default function Component() {
       {/* Hero Section */}
       <section className="relative h-[400px] flex items-center justify-center">
         <div className="absolute inset-0">
-          <Image src="/cricgem-stadium.png" alt="Cricket Stadium" fill className="object-cover" priority />
+          <Image src="/assets/blogs/image.jpg" alt="Cricket Stadium" fill className="object-cover" priority />
           <div className="absolute inset-0 bg-black/40" />
         </div>
         <div className="relative z-10 text-center">
@@ -38,23 +38,24 @@ export default function Component() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post, index) => (
-              <Card key={index} className="bg-white border-0 shadow-lg rounded-lg overflow-hidden">
-                <CardContent className="p-6">
-                  <div className="mb-4">
-                    <span className="inline-block bg-[#ff0000] text-white px-3 py-1 rounded text-sm font-medium">
-                      {post.date}
-                    </span>
-                  </div>
-                  <h3 className="text-[#605a87] font-semibold text-lg mb-4 leading-tight">{post.title}</h3>
-                  <p className="text-[#000000] text-sm leading-relaxed mb-6">{post.content}</p>
-                  <Button
-                    variant="outline"
-                    className="bg-[#605a87] text-white border-[#605a87] hover:bg-[#1b1253] hover:border-[#1b1253]"
-                  >
-                    Read More
-                  </Button>
-                </CardContent>
-              </Card>
+                
+            <Card key={index} className="bg-white rounded-lg overflow-hidden shadow-lg" style={{width: '376px', height: '500px'}}>
+            <CardContent className="p-6 h-full flex flex-col">
+              <h3 className="text-[#605a87] font-semibold text-lg mb-4 leading-tight">{post.title}</h3>
+              <div className="mb-4">
+                <span className="inline-block border border-red-500 text-red-500 px-3 py-1 rounded text-sm font-medium bg-transparent">
+                  {post.date}
+                </span>
+              </div>
+              <p className="text-black text-sm leading-relaxed mb-6 flex-1">{post.content}</p>
+              <Button 
+                variant="outline" 
+                className="bg-[#605a87] text-white border-[#605a87] hover:bg-[#4a4970] hover:border-[#4a4970] w-fit"
+              >
+                Read More
+              </Button>
+            </CardContent>
+          </Card>
             ))}
           </div>
         </div>
