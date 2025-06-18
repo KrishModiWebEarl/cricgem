@@ -25,7 +25,7 @@ export default function CricGemLanding() {
 
   const supportOptions = [
     { icon: FaEnvelope, title: "Mail Support", bg: "bg-[#423d6d]" },
-    { icon: FaTelegramPlane, title: "Telegram Support", bg: "bg-[#8f8bab]" },
+    { icon: FaTelegramPlane, title: "Telegram Support", bg: "bg-[#423d6d]" },
     { icon: FaPhoneAlt, title: "Call Support", bg: "bg-[#423d6d]" },
   ];
 
@@ -146,21 +146,25 @@ export default function CricGemLanding() {
       </section>
 
       {/* Support Section */}
-      <section className="py-20 bg-gradient-to-br from-[#1b1253] via-[#140b40] to-[#1d1459]">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold text-white mb-4">Support System</h2>
-          <p className="text-white/80 mb-12 max-w-2xl mx-auto">
-            "As we prioritize our customers, we've ensured multi-channel support is readily available for you"
-          </p>
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {supportOptions.map((support, index) => (
-              <Card key={index} className={`${support.bg} border-0 text-white`}>
-                <CardContent className="p-8 text-center">
-                  <support.icon className="w-12 h-12 mx-auto mb-4" />
-                  <h3 className="font-bold">{support.title}</h3>
-                </CardContent>
-              </Card>
-            ))}
+      <section className="py-20 relative">
+        <div className="absolute inset-0 bg-cover bg-center z-0" style={{ backgroundImage: 'url(/Assets/homepage/contactus.jpg)' }}></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#1b1253]/80 via-[#140b40]/80 to-[#1d1459]/80 z-0"></div>
+        <div className="relative z-10">
+          <div className="max-w-7xl mx-auto px-6 text-center">
+            <h2 className="text-4xl font-bold text-white mb-4">Support System</h2>
+            <p className="text-white/80 mb-12 max-w-2xl mx-auto">
+              "As we prioritize our customers, we've ensured multi-channel support is readily available for you"
+            </p>
+            <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+              {supportOptions.map((support, index) => (
+                <Card key={index} className={`${support.bg} border-0 text-white transition-all duration-300 hover:bg-white hover:text-[#1b1253]`}>
+                  <CardContent className="p-8 text-center">
+                    <support.icon className="w-12 h-12 mx-auto mb-4 transition-colors duration-300" />
+                    <h3 className="font-bold">{support.title}</h3>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </section>
