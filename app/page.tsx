@@ -45,7 +45,8 @@ export default function CricGemLanding() {
           {/* Left Content */}
           <div className="text-white max-w-4xl pt-32 lg:pt-40">
             {/* Logo and CRICGEM */}
-            <Link href="/" className="flex items-center space-x-2">
+
+            <div className="flex items-center mb-12 lg:mb-16">
             <Image
               src="/Assets/logo.png"
               alt="CricGem Logo"
@@ -53,13 +54,6 @@ export default function CricGemLanding() {
               height={80}
               className="object-contain"
             />
-          </Link>
-            <div className="flex items-center mb-12 lg:mb-16">
-              <img
-                src="/assets/logo.png"
-                alt="CricGem Logo"
-                className="w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 object-contain mr-4 lg:mr-6"
-              />
               <h1
                 className="text-[#fef0b7] text-3xl sm:text-4xl lg:text-5xl xl:text-6xl"
                 style={{
