@@ -144,7 +144,7 @@ export default function CricGemLanding() {
           <div className="text-center relative">
             {/* Image Placeholder - Replace with your image */}
             <div className="mt-4">
-              <img src="./Assets/homepage/group 90.png" alt="Step 1" className="mx-auto w-full max-w-[280px] h-auto" />
+              <img src="/Assets/homepage/group 90.png" alt="Step 1" className="mx-auto w-full max-w-[280px] h-auto" />
             </div>
 
             {/* Caption Box */}
@@ -157,7 +157,7 @@ export default function CricGemLanding() {
           <div className="text-center relative">
             {/* Image Placeholder - Replace with your image */}
             <div className="mt-4">
-              <img src="./Assets/homepage/group 89.png" alt="Step 2" className="mx-auto w-full max-w-[280px] h-auto" />
+              <img src="/Assets/homepage/group 89.png" alt="Step 2" className="mx-auto w-full max-w-[280px] h-auto" />
             </div>
 
             {/* Caption Box */}
@@ -170,7 +170,7 @@ export default function CricGemLanding() {
           <div className="text-center relative">
             {/* Image Placeholder - Replace with your image */}
             <div className="mt-4">
-              <img src="./Assets/homepage/group 88.png" alt="Step 3" className="mx-auto w-full max-w-[280px] h-auto" />
+              <img src="/Assets/homepage/group 88.png" alt="Step 3" className="mx-auto w-full max-w-[280px] h-auto" />
             </div>
 
             {/* Caption Box */}
