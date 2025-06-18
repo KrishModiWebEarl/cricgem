@@ -10,7 +10,7 @@ export default function TermsAndConditions() {
     
 
       {/* Hero Section */}
-      <div className="relative h-64 overflow-hidden">
+      <div className="relative h-[300px] overflow-hidden">
         <Image src="Assets/Policies/s.png" alt="Cricket Stadium" fill className="object-cover" />
         <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white text-center">TERMS & CONDITIONS</h1>

@@ -12,7 +12,7 @@ export default function Component() {
 
       {/* Hero Section */}
       <section
-  className="relative h-48 bg-cover bg-center flex items-center justify-center"
+  className="relative h-[300px] bg-cover bg-center flex items-center justify-center"
   style={{ backgroundImage: "url('/Assets/Policies/bat.png')" }} // ✅ Set your actual path
 >
   {/* Optional: Add overlay for readability */}
