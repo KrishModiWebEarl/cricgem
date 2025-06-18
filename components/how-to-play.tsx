@@ -38,7 +38,7 @@ export default function Component() {
       {/* Step-by-Step Guide */}
       <section className="py-16 relative">
         <div className="container mx-auto px-2 sm:px-4">
-          <h2 className="text-3xl font-bold text-center text-[#605a87] mb-16">
+          <h2 className="text-3xl font-bold text-center text-[#605a87] mb-16 font-Poppins drop-shadow-lg">
             STEP-BY-STEP GUIDE TO PLAY FANTASY CRICKET
           </h2>
 
