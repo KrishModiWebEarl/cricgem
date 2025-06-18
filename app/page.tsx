@@ -147,7 +147,7 @@ export default function CricGemLanding() {
               <Image src="/assets/homepage/group 90.png" 
               alt="Step 1" 
               width={240}
-              height={240}
+              height={80}
               className="mx-auto w-full max-w-[280px] h-auto" />
             </div>
 
@@ -161,7 +161,7 @@ export default function CricGemLanding() {
           <div className="text-center relative">
             {/* Image Placeholder - Replace with your image */}
             <div className="mt-4">
-              <Image src="/assets/homepage/group 89.png" alt="Step 2" width={240} height={240} className="mx-auto w-full max-w-[280px] h-auto" />
+              <img src="/assets/homepage/group 89.png" alt="Step 2" className="mx-auto w-full max-w-[280px] h-auto" />
             </div>
 
             {/* Caption Box */}
@@ -174,7 +174,7 @@ export default function CricGemLanding() {
           <div className="text-center relative">
             {/* Image Placeholder - Replace with your image */}
             <div className="mt-4">
-              <Image src="/assets/homepage/group 88.png" alt="Step 3" width={240} height={240} className="mx-auto w-full max-w-[280px] h-auto" />
+              <img src="/assets/homepage/group 88.png" alt="Step 3" className="mx-auto w-full max-w-[280px] h-auto" />
             </div>
 
             {/* Caption Box */}
@@ -236,11 +236,9 @@ export default function CricGemLanding() {
                     <div className="absolute inset-2 bg-black rounded-[1.25rem] overflow-hidden">
                       {/* Screen Content */}
                       <div className="w-full h-full bg-white rounded-[1.125rem] overflow-hidden relative">
-                        <Image
+                        <img
                           src={img || "/placeholder.svg"}
                           alt={`App Screen ${idx + 1}`}
-                          width={240}
-                          height={240}
                           className="w-full h-full object-cover"
                         />
 
