@@ -83,34 +83,90 @@ export default function CricGemLanding() {
       </section>
 
       {/* App Preview Section */}
-      <section className="py-20 bg-gradient-to-br from-[#1b1253] via-[#140b40] to-[#1d1459] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 w-20 h-20 bg-[#fef0b7] rounded-lg transform rotate-45"></div>
-          <div className="absolute bottom-10 right-10 w-20 h-20 bg-[#fef0b7] rounded-lg transform rotate-45"></div>
-        </div>
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <h2 className="text-4xl font-bold text-center text-white mb-16">APP PREVIEW</h2>
-          <div className="flex items-center justify-center space-x-8">
-            <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
-              <ChevronLeft className="w-6 h-6" />
-            </Button>
-            <div className="flex space-x-6">
-              {[1, 2, 3, 4].map((phone) => (
-                <div key={phone} className="w-48 h-96 bg-black rounded-3xl p-2 shadow-2xl">
-                  <div className="w-full h-full bg-white rounded-2xl overflow-hidden">
-                    <div className="h-full bg-[#f1f1f1] flex items-center justify-center">
-                      <div className="text-[#8f8bab] text-sm">App Screen {phone}</div>
+      <section
+      className="py-20 relative overflow-hidden bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: "url('/Assets/homepage/App.jpg')",
+      }}
+    >
+      {/* Light Purple Overlay */}
+      <div className="absolute inset-0 bg-[#1b1253]/80 z-0"></div>
+
+      {/* Decorative squares */}
+      <div className="absolute inset-0 opacity-10 z-10">
+        <div className="absolute top-10 left-10 w-20 h-20 bg-[#fef0b7] rounded-lg transform rotate-45"></div>
+        <div className="absolute bottom-10 right-10 w-20 h-20 bg-[#fef0b7] rounded-lg transform rotate-45"></div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 relative z-20">
+        <h2 className="text-4xl font-bold text-center text-white mb-16">APP PREVIEW</h2>
+
+        <div className="flex items-center justify-center space-x-8">
+          <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
+            <ChevronLeft className="w-8 h-8" />
+          </Button>
+
+          {/* App Screens with Enhanced Frames */}
+          <div className="flex space-x-10">
+            {[
+              "/assets/howtoplay/phone1.png",
+              "/assets/howtoplay/phone2.png",
+              "/assets/howtoplay/phone3.png",
+              "/assets/howtoplay/phone4.png",
+            ].map((img, idx) => (
+              <div key={idx} className="relative group">
+                {/* Outer Glow Effect */}
+                <div className="absolute -inset-2 bg-gradient-to-r from-blue-400/20 via-purple-400/20 to-pink-400/20 rounded-[2rem] blur-lg opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                {/* Premium Frame Container */}
+                <div className="relative">
+                  {/* Metallic Frame Border */}
+                  <div className="absolute -inset-1 bg-gradient-to-br from-gray-300 via-gray-100 to-gray-400 rounded-[1.75rem] shadow-2xl"></div>
+
+                  {/* Inner Frame Shadow */}
+                  <div className="absolute -inset-0.5 bg-gradient-to-br from-gray-800 via-gray-900 to-black rounded-[1.65rem]"></div>
+
+                  {/* Phone Container */}
+                  <div className="relative w-48 h-96 bg-black rounded-3xl overflow-hidden shadow-2xl border-2 border-gray-800">
+                    {/* Screen Bezel */}
+                    <div className="absolute inset-2 bg-black rounded-[1.25rem] overflow-hidden">
+                      {/* Screen Content */}
+                      <div className="w-full h-full bg-white rounded-[1.125rem] overflow-hidden relative">
+                        <img
+                          src={img || "/placeholder.svg"}
+                          alt={`App Screen ${idx + 1}`}
+                          className="w-full h-full object-cover"
+                        />
+
+                        {/* Screen Reflection Effect */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent pointer-events-none"></div>
+                      </div>
                     </div>
+
+                    {/* Home Indicator */}
+                    <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-white/30 rounded-full"></div>
+
+                    {/* Camera Notch */}
+                    <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-16 h-6 bg-black rounded-full border border-gray-700"></div>
                   </div>
+
+                  {/* Corner Highlights */}
+                  <div className="absolute top-2 left-2 w-4 h-4 bg-gradient-to-br from-white/40 to-transparent rounded-full blur-sm"></div>
+                  <div className="absolute top-2 right-2 w-3 h-3 bg-gradient-to-bl from-white/30 to-transparent rounded-full blur-sm"></div>
+
+                  {/* Bottom Reflection */}
+                  <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-40 h-4 bg-white/5 rounded-full blur-xl"></div>
                 </div>
-              ))}
-            </div>
-            <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
-              <ChevronRight className="w-6 h-6" />
-            </Button>
+              </div>
+            ))}
           </div>
+
+          <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
+            <ChevronRight className="w-8 h-8" />
+          </Button>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* Easy to Play Section */}
       <section className="py-20 bg-white">
