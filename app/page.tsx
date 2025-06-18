@@ -32,7 +32,11 @@ export default function CricGemLanding() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative h-screen bg-gradient-to-br from-[#1b1253] via-[#140b40] to-[#1d1459] overflow-hidden">
+      <section className="relative h-screen overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url(/Assets/homepage/main-starting.png)' }}></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-[#1b1253]/80 via-[#140b40]/80 to-[#1d1459]/80"></div>
+        </div>
         <div className="relative z-10 flex items-center justify-center h-full px-6">
           <div className="text-center text-white max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-8">
@@ -43,7 +47,7 @@ export default function CricGemLanding() {
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Real Cricket</h2>
             <h3 className="text-4xl md:text-5xl font-bold mb-12">Fantasy Platform</h3>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="absolute bottom-12 right-8 flex flex-col sm:flex-row gap-4">
               <Button className="bg-[#000000] hover:bg-[#140000] text-white px-8 py-3 rounded-lg flex items-center">
                 <Play className="w-5 h-5 mr-2" />
                 Get it on Google Play
@@ -55,32 +59,64 @@ export default function CricGemLanding() {
           </div>
         </div>
       </section>
+      
 
-      {/* Steps Section */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center text-[#605a87] mb-16">
-            Steps to Download & Install the CricGem!
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((step) => (
-              <div key={step} className="text-center">
-                <div className="relative mb-6">
-                  <div className="w-8 h-8 bg-[#1b1253] text-white rounded-full flex items-center justify-center text-lg font-bold absolute -top-4 left-4 z-10">
-                    {step}
-                  </div>
-                  <div className="bg-[#605a87] rounded-lg p-6 pt-8">
-                    <div className="bg-white rounded-lg p-4 h-48 flex items-center justify-center">
-                      <div className="w-32 h-40 bg-[#f1f1f1] rounded-lg"></div>
-                    </div>
-                  </div>
-                </div>
-                <p className="text-[#605a87] font-medium">Visit cricgem.com and click on "Download Android App"</p>
-              </div>
-            ))}
+      <div className="max-w-7xl mx-auto px-6">
+        <h2
+          className="text-center mb-16"
+          style={{
+            fontFamily: "Montserrat, sans-serif",
+            fontWeight: 700,
+            fontSize: "47px",
+            color: "#605a87",
+          }}
+        >
+          Steps to Download & Install the CricGem !
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {/* Step 1 */}
+          <div className="text-center relative">
+            {/* Image Placeholder - Replace with your image */}
+            <div className="mt-4">
+              <img src="/assets/homepage/group 90.png" alt="Step 1" className="mx-auto w-full max-w-[280px] h-auto" />
+            </div>
+
+            {/* Caption Box */}
+            <div className="mt-6 px-4 py-3 bg-[#605a87] text-white font-medium rounded-md text-sm shadow-md">
+              Visit playerzpot.com and click on "Download Android" button
+            </div>
+          </div>
+
+          {/* Step 2 */}
+          <div className="text-center relative">
+            {/* Image Placeholder - Replace with your image */}
+            <div className="mt-4">
+              <img src="/assets/homepage/group 89.png" alt="Step 2" className="mx-auto w-full max-w-[280px] h-auto" />
+            </div>
+
+            {/* Caption Box */}
+            <div className="mt-6 px-4 py-3 bg-[#605a87] text-white font-medium rounded-md text-sm shadow-md">
+              Visit playerzpot.com and click on "Download Android" button
+            </div>
+          </div>
+
+          {/* Step 3 */}
+          <div className="text-center relative">
+            {/* Image Placeholder - Replace with your image */}
+            <div className="mt-4">
+              <img src="/assets/homepage/group 88.png" alt="Step 3" className="mx-auto w-full max-w-[280px] h-auto" />
+            </div>
+
+            {/* Caption Box */}
+            <div className="mt-6 px-4 py-3 bg-[#605a87] text-white font-medium rounded-md text-sm shadow-md">
+              Visit playerzpot.com and click on "Download Android" button
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* App Preview Section */}
       <section
