@@ -254,7 +254,7 @@ export default function CricGemLanding() {
       <section
         className="py-20 relative overflow-hidden bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/Assets/homepage/App.jpg')",
+          backgroundImage: "url('/Assets/homepage/App2.jpg')",
         }}
       >
         {/* Light Purple Overlay */}
@@ -271,9 +271,9 @@ export default function CricGemLanding() {
 
           {/* Desktop View - Above 900px */}
           <div className="hidden min-[900px]:flex items-center justify-center space-x-8">
-            <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
+            {/* <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
               <ChevronLeft className="w-8 h-8" />
-            </Button>
+            </Button> */}
 
             {/* App Screens with Enhanced Frames */}
             <div className="flex space-x-10">
@@ -330,9 +330,9 @@ export default function CricGemLanding() {
               ))}
             </div>
 
-            <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
+            {/* <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
               <ChevronRight className="w-8 h-8" />
-            </Button>
+            </Button> */}
           </div>
 
           {/* Mobile Slideshow - Below 900px */}
