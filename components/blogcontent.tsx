@@ -9,37 +9,8 @@ interface BlogContentProps {
 export default function BlogContent({ slug }: BlogContentProps) {
   return (
     <div className="min-h-screen bg-white mt-[80px]">
-      {/* Header */}
-      <header className="bg-[#2D1B69] text-white">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
-              <div className="w-6 h-6 bg-[#2D1B69] rounded-full flex items-center justify-center">
-                <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
-              </div>
-            </div>
-            <span className="text-xl font-bold">CRICGEM</span>
-          </div>
-
-          <nav className="hidden md:flex items-center gap-8">
-            <Link href="#" className="hover:text-yellow-400 transition-colors">
-              How to Play
-            </Link>
-            <Link href="#" className="hover:text-yellow-400 transition-colors">
-              Point System
-            </Link>
-            <Link href="#" className="hover:text-yellow-400 transition-colors">
-              About Us
-            </Link>
-            <Link href="#" className="hover:text-yellow-400 transition-colors">
-              Blog
-            </Link>
-          </nav>
-        </div>
-      </header>
-
-      {/* Main Content */}
-      <main className="container mx-auto px-4 py-12 max-w-4xl">
+        {/* Main Content */}
+      <main className="w-[100%] mx-auto px-4 py-12 max-w-6xl text-justify">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8 leading-tight">
           5 Reasons Why Fantasy Cricket Is More Popular than Other Fantasy Sports in India
         </h1>

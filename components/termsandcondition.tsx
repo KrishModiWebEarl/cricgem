@@ -6,9 +6,8 @@ import { Youtube, Instagram, Facebook, Play } from "lucide-react"
 
 export default function TermsAndConditions() {
   return (
-    <div className="min-h-screen mt-[80px]">
-    
-
+    <div className="w-[100%] min-h-screen mt-[80px] text-justify">
+  
       {/* Hero Section */}
       <div className="relative h-[300px] overflow-hidden">
         <Image src="Assets/Policies/s.png" alt="Cricket Stadium" fill className="object-cover" />

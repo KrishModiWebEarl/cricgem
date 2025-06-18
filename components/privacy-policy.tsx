@@ -5,10 +5,7 @@ import { Youtube, Instagram, Facebook, Play } from "lucide-react"
 
 export default function Component() {
   return (
-    <div className="min-h-screen mt-[80px]" >
-      {/* Header */}
-      
-        
+    <div className="w-[100%] min-h-screen mt-[80px] text-justify" >
 
       {/* Hero Section */}
       <section
@@ -26,7 +23,7 @@ export default function Component() {
 
       {/* Content */}
       <main className="max-w-6xl mx-auto px-4 md:px-8 py-1">
-        <div className="space-y-8">
+        <div className="space-y-8 mt-10">
           {/* Privacy Policy Section */}
           <section>
             <h2 className="text-2xl font-bold text-[#000000] mb-4">PRIVACY POLICY</h2>
