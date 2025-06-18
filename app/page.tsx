@@ -168,38 +168,140 @@ export default function CricGemLanding() {
       </div>
     </section>
 
-      {/* Easy to Play Section */}
+        {/* Easy to Play Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center text-[#605a87] mb-16">EASY TO PLAY</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { step: 1, title: "Select A Match", subtitle: "Indian Premier League" },
-              { step: 2, title: "Create Your Team", subtitle: "Create Team" },
-              { step: 3, title: "Join Contests", subtitle: "₹50 Crores" },
+              { 
+                step: 1, 
+                title: "Select A Match", 
+                subtitle: "Indian Premier League",
+                content: (
+                  <div className="space-y-4">
+                    <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                      <div className="flex items-center gap-2">
+                        <div className="w-6 h-4 bg-orange-500 rounded-sm"></div>
+                        <span className="font-medium text-sm">IND</span>
+                      </div>
+                      <div className="text-center">
+                        <div className="text-xs text-gray-500">Today</div>
+                        <div className="text-sm font-medium text-red-600">08:30 PM</div>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="font-medium text-sm">SA</span>
+                        <div className="w-6 h-4 bg-blue-500 rounded-sm"></div>
+                      </div>
+                    </div>
+                    <Button className="w-full bg-[#1b1253] hover:bg-[#1b1253]/90">Join Now</Button>
+                  </div>
+                )
+              },
+              { 
+                step: 2, 
+                title: "Create Your Team", 
+                subtitle: "Create Team",
+                content: (
+                  <div className="space-y-4">
+                    <div className="text-xs text-gray-500 mb-2">SELECTED BY</div>
+                    <div className="space-y-2">
+                      {[
+                        { name: "V KOHLI", team: "RCB", points: "53", credits: "9.0" },
+                        { name: "V KOHLI", team: "RCB", points: "53", credits: "9.0" },
+                      ].map((player, idx) => (
+                        <div key={idx} className="flex items-center justify-between p-2 bg-gray-50 rounded">
+                          <div className="flex items-center gap-2">
+                            <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs">
+                              P
+                            </div>
+                            <div>
+                              <div className="text-xs font-medium">{player.name}</div>
+                              <div className="text-xs text-gray-500">{player.team}</div>
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <span className="text-xs">{player.points}</span>
+                            <span className="text-xs">{player.credits}</span>
+                            <Plus className="w-4 h-4 text-green-500" />
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )
+              },
+              { 
+                step: 3, 
+                title: "Join Contests", 
+                subtitle: "₹50 Crores",
+                content: (
+                  <div className="space-y-4">
+                    <div className="text-center">
+                      <div className="text-xs text-gray-500">Prize Pool</div>
+                      <div className="text-lg font-bold text-[#1b1253]">₹58 Crores</div>
+                    </div>
+                    <div className="space-y-2 text-xs">
+                      <div className="flex justify-between">
+                        <span className="text-gray-500">#1 - ₹1 Cr</span>
+                        <span className="text-gray-500">#2 - ₹1 Cr</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-gray-500">13,21,200 spots left</span>
+                        <span className="text-gray-500">13,21,200 spots</span>
+                      </div>
+                    </div>
+                    <Button className="w-full bg-[#1b1253] hover:bg-[#1b1253]/90">₹67</Button>
+                  </div>
+                )
+              },
             ].map((item) => (
-              <div key={item.step} className="text-center">
-                <div className="relative mb-6">
-                  <div className="w-8 h-8 bg-[#1b1253] text-white rounded-full flex items-center justify-center text-lg font-bold absolute -top-4 left-4 z-10">
+              <div key={item.step} className="relative">
+                {/* Step Number and Title */}
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-[#605a87] text-white rounded-full flex items-center justify-center text-xl font-bold mr-4 relative z-20">
                     {item.step}
                   </div>
-                  <Card className="pt-8">
-                    <CardContent className="p-6">
-                      <div className="h-48 bg-[#f1f1f1] rounded-lg mb-4 flex items-center justify-center">
-                        <div className="text-[#8f8bab] text-sm">{item.title}</div>
-                      </div>
-                      <h3 className="font-bold text-[#1b1253] mb-2">{item.title}</h3>
-                      <p className="text-[#8f8bab] text-sm">
-                        Lorem ipsum dolor sit amet consectetur. Elementum rhoncus lorem ut.
+                  <h3 className="font-bold text-[#605a87] text-xl">{item.title}</h3>
+                </div>
+
+                {/* Card Container */}
+                <div className="relative">
+                  {/* Background Purple Card */}
+                  <div className="bg-[#605a87] rounded-lg p-6 pt-4 pb-8 shadow-lg">
+                    {/* Space for white card */}
+                    <div className="h-64 mb-4"></div>
+                    
+                    {/* Text at bottom of purple card */}
+                    <div className="text-center">
+                      <p className="text-white text-sm leading-relaxed">
+                        Lorem ipsum dolor sit amet consectetur. Euismod rhoncus aliquam
                       </p>
-                    </CardContent>
-                  </Card>
+                    </div>
+                  </div>
+
+                  {/* Foreground White Card */}
+                  <div className="absolute top-4 left-4 right-4">
+                    <Card className="bg-white shadow-xl border border-gray-200">
+                      <CardContent className="p-0">
+                        {/* Subtitle Header */}
+                        <div className="bg-gray-100 text-gray-600 text-sm px-4 py-3 text-center font-medium border-b">
+                          {item.subtitle}
+                        </div>
+
+                        {/* Main Content */}
+                        <div className="p-4">{item.content}</div>
+                      </CardContent>
+                    </Card>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
         </div>
       </section>
+
+
 
       {/* Support Section */}
       <section className="py-20 relative">
