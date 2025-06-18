@@ -53,7 +53,7 @@ export default function CricGemLanding() {
               width={80}
               height={80}
               className="object-contain"
-            />
+            />  
               <h1
                 className="text-[#fef0b7] text-3xl sm:text-4xl lg:text-5xl xl:text-6xl"
                 style={{
@@ -64,7 +64,7 @@ export default function CricGemLanding() {
                   letterSpacing: "0.02em",
                 }}
               >
-                CRICGEM
+                   CRICGEM
               </h1>
             </div>
 
@@ -144,7 +144,11 @@ export default function CricGemLanding() {
           <div className="text-center relative">
             {/* Image Placeholder - Replace with your image */}
             <div className="mt-4">
-              <img src="/assets/homepage/group 90.png" alt="Step 1" className="mx-auto w-full max-w-[280px] h-auto" />
+              <Image src="/assets/homepage/group 90.png" 
+              alt="Step 1" 
+              width={240}
+              height={240}
+              className="mx-auto w-full max-w-[280px] h-auto" />
             </div>
 
             {/* Caption Box */}
@@ -157,7 +161,7 @@ export default function CricGemLanding() {
           <div className="text-center relative">
             {/* Image Placeholder - Replace with your image */}
             <div className="mt-4">
-              <img src="/assets/homepage/group 89.png" alt="Step 2" className="mx-auto w-full max-w-[280px] h-auto" />
+              <Image src="/assets/homepage/group 89.png" alt="Step 2" width={240} height={240} className="mx-auto w-full max-w-[280px] h-auto" />
             </div>
 
             {/* Caption Box */}
@@ -170,7 +174,7 @@ export default function CricGemLanding() {
           <div className="text-center relative">
             {/* Image Placeholder - Replace with your image */}
             <div className="mt-4">
-              <img src="/assets/homepage/group 88.png" alt="Step 3" className="mx-auto w-full max-w-[280px] h-auto" />
+              <Image src="/assets/homepage/group 88.png" alt="Step 3" width={240} height={240} className="mx-auto w-full max-w-[280px] h-auto" />
             </div>
 
             {/* Caption Box */}
@@ -232,9 +236,11 @@ export default function CricGemLanding() {
                     <div className="absolute inset-2 bg-black rounded-[1.25rem] overflow-hidden">
                       {/* Screen Content */}
                       <div className="w-full h-full bg-white rounded-[1.125rem] overflow-hidden relative">
-                        <img
+                        <Image
                           src={img || "/placeholder.svg"}
                           alt={`App Screen ${idx + 1}`}
+                          width={240}
+                          height={240}
                           className="w-full h-full object-cover"
                         />
 
