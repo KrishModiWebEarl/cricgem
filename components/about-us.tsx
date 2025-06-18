@@ -14,7 +14,7 @@ export default function Component() {
       rating: 5,
       text: "Amazing app! Love the user interface and the variety of contests available. I've been winning regularly and the withdrawal process is super smooth. Highly recommended for all cricket fans!",
       winAmount: "₹5,200/-",
-      avatar: "/assets/About/tom.jpg",
+      avatar: "/Assets/About/tom.jpg",
       initials: "RS",
     },
     {
@@ -60,7 +60,7 @@ export default function Component() {
       {/* About Us Section with Background Image */}
       <section
         className="relative py-16 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url(/assets/About/Stadium.png)" }}
+        style={{ backgroundImage: "url(/Assets/About/Stadium.png)" }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>
         <div className="relative max-w-6xl mx-auto px-6 z-10">
@@ -115,7 +115,7 @@ export default function Component() {
             <div className="flex-1 order-1 lg:order-1">
               <div className="w-64 h-50 relative flex items-center justify-center mx-auto lg:mx-0">
                 <img
-                  src="/assets/About/ball.png"
+                  src="/Assets/About/ball.png"
                   alt="Sports Illustration"
                   className="max-w-full max-h-full object-contain"
                 />
@@ -159,7 +159,7 @@ export default function Component() {
             <div className="flex-shrink-0 order-2 mx-auto md:mx-0">
               <div className="w-64 h-64 mb-2 relative flex items-center justify-center">
                 <img
-                  src="/assets/About/player.png"
+                  src="/Assets/About/player.png"
                   alt="CricGem Team Member"
                   className="object-contain"
                 />

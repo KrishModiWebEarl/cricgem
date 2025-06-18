@@ -144,11 +144,7 @@ export default function CricGemLanding() {
           <div className="text-center relative">
             {/* Image Placeholder - Replace with your image */}
             <div className="mt-4">
-              <Image src="/assets/homepage/group 90.png" 
-              alt="Step 1" 
-              width={240}
-              height={80}
-              className="mx-auto w-full max-w-[280px] h-auto" />
+              <img src="./Assets/homepage/group 90.png" alt="Step 1" className="mx-auto w-full max-w-[280px] h-auto" />
             </div>
 
             {/* Caption Box */}
@@ -161,7 +157,7 @@ export default function CricGemLanding() {
           <div className="text-center relative">
             {/* Image Placeholder - Replace with your image */}
             <div className="mt-4">
-              <img src="/assets/homepage/group 89.png" alt="Step 2" className="mx-auto w-full max-w-[280px] h-auto" />
+              <img src="./Assets/homepage/group 89.png" alt="Step 2" className="mx-auto w-full max-w-[280px] h-auto" />
             </div>
 
             {/* Caption Box */}
@@ -174,7 +170,7 @@ export default function CricGemLanding() {
           <div className="text-center relative">
             {/* Image Placeholder - Replace with your image */}
             <div className="mt-4">
-              <img src="/assets/homepage/group 88.png" alt="Step 3" className="mx-auto w-full max-w-[280px] h-auto" />
+              <img src="./Assets/homepage/group 88.png" alt="Step 3" className="mx-auto w-full max-w-[280px] h-auto" />
             </div>
 
             {/* Caption Box */}
@@ -213,10 +209,10 @@ export default function CricGemLanding() {
           {/* App Screens with Enhanced Frames */}
           <div className="flex space-x-10">
             {[
-              "/assets/howtoplay/phone1.png",
-              "/assets/howtoplay/phone2.png",
-              "/assets/howtoplay/phone3.png",
-              "/assets/howtoplay/phone4.png",
+              "/Assets/howtoplay/phone1.png",
+              "/Assets/howtoplay/phone2.png",
+              "/Assets/howtoplay/phone3.png",
+              "/Assets/howtoplay/phone4.png",
             ].map((img, idx) => (
               <div key={idx} className="relative group">
                 {/* Outer Glow Effect */}

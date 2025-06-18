@@ -7,7 +7,7 @@ export default function Component() {
       <section
         className="relative h-[400px] bg-cover bg-center bg-no-repeat flex items-center justify-center text-white"
         style={{
-          backgroundImage: "url(/assets/howtoplay/cricket.png)",
+          backgroundImage: "url(/Assets/howtoplay/cricket.png)",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>
@@ -49,7 +49,7 @@ export default function Component() {
               <div className="lg:w-1/2 flex justify-center relative">
                 <div className="w-64 h-96 relative">
                   <Image
-                    src="/assets/howtoplay/phone1.png?height=400&width=250"
+                    src="/Assets/howtoplay/phone1.png?height=400&width=250"
                     alt="Select Match Mobile Screen"
                     width={250}
                     height={400}
@@ -73,7 +73,7 @@ export default function Component() {
               <div className="lg:w-1/2 flex justify-center relative">
                 <div className="w-64 h-96 relative">
                   <Image
-                    src="/assets/howtoplay/phone2.png?height=400&width=250"
+                    src="/Assets/howtoplay/phone2.png?height=400&width=250"
                     alt="Select Contest Mobile Screen"
                     width={250}
                     height={400}
@@ -97,7 +97,7 @@ export default function Component() {
               <div className="lg:w-1/2 flex justify-center relative">
                 <div className="w-64 h-96 relative">
                   <Image
-                    src="/assets/howtoplay/phone3.png?height=400&width=250"
+                    src="/Assets/howtoplay/phone3.png?height=400&width=250"
                     alt="Select Playing XI Mobile Screen"
                     width={250}
                     height={400}
@@ -125,7 +125,7 @@ export default function Component() {
               <div className="lg:w-1/2 flex justify-center relative">
                 <div className="w-64 h-96 relative">
                   <Image
-                    src="/assets/howtoplay/phone4.png?height=400&width=250"
+                    src="/Assets/howtoplay/phone4.png?height=400&width=250"
                     alt="Select Captain Mobile Screen"
                     width={250}
                     height={400}
@@ -149,7 +149,7 @@ export default function Component() {
               <div className="lg:w-1/2 flex justify-center relative">
                 <div className="w-64 h-96 relative">
                   <Image
-                    src="/assets/howtoplay/phone5.png?height=400&width=250"
+                    src="/Assets/howtoplay/phone5.png?height=400&width=250"
                     alt="Join League Mobile Screen"
                     width={250}
                     height={400}
