@@ -539,7 +539,7 @@ export default function CricGemLanding() {
                       className="p-6 flex items-center justify-between cursor-pointer hover:bg-gray-50 transition-colors"
                       onClick={() => toggleOpen(index)}
                     >
-                      <span className="text-[#605a87] font-medium">{faq.question}</span>
+                      <span className="text-[#605a87] font-bold">{faq.question}</span>
                       <div className={`transition-transform duration-200 ${isOpen ? "transform rotate-180" : ""}`}>
                         {isOpen ? (
                           <Minus className="w-5 h-5 text-[#605a87]" />

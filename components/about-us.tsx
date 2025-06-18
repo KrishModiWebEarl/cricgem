@@ -201,7 +201,7 @@ export default function Component() {
 
               <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6">
                 {getCurrentReviews().map((review, index) => (
-                  <Card key={currentReviewIndex + index} className="bg-white shadow-sm border border-black">
+                  <Card key={currentReviewIndex + index} className="bg-white">
                     <CardContent className=" bg-[#f1f1f1] p-6 rounded-xl">
                       <div className="flex items-center gap-3 mb-4">
                         <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
