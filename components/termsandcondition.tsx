@@ -7,37 +7,11 @@ import { Youtube, Instagram, Facebook, Play } from "lucide-react"
 export default function TermsAndConditions() {
   return (
     <div className="min-h-screen bg-[#fffcfc] mt-[80px]">
-      {/* Header */}
-      <header className="bg-[#1b1253] text-white px-6 py-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-[#fef0b7] rounded-full flex items-center justify-center">
-              <div className="w-6 h-6 bg-[#1b1253] rounded-full flex items-center justify-center">
-                <div className="w-3 h-3 bg-[#fef0b7] rounded-full"></div>
-              </div>
-            </div>
-            <span className="font-bold text-lg">CRICGEM</span>
-          </div>
-          <nav className="hidden md:flex items-center gap-8">
-            <Link href="#" className="text-white hover:text-[#fef0b7] transition-colors">
-              How to Play
-            </Link>
-            <Link href="#" className="text-white hover:text-[#fef0b7] transition-colors">
-              Point System
-            </Link>
-            <Link href="#" className="text-white hover:text-[#fef0b7] transition-colors">
-              About Us
-            </Link>
-            <Link href="#" className="text-white hover:text-[#fef0b7] transition-colors">
-              Blog
-            </Link>
-          </nav>
-        </div>
-      </header>
+    
 
       {/* Hero Section */}
       <div className="relative h-64 overflow-hidden">
-        <Image src="Assets/policies/s.jpg" alt="Cricket Stadium" fill className="object-cover" />
+        <Image src="Assets/policies/s.png" alt="Cricket Stadium" fill className="object-cover" />
         <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white text-center">TERMS & CONDITIONS</h1>
         </div>

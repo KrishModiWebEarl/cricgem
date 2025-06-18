@@ -7,7 +7,7 @@ export default function Component() {
       <section
         className="relative h-[400px] bg-cover bg-center bg-no-repeat flex items-center justify-center text-white"
         style={{
-          backgroundImage: "url(/assets/howtoplay/cricket.jpg)",
+          backgroundImage: "url(/assets/howtoplay/cricket.png)",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>

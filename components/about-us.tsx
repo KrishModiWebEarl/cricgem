@@ -60,7 +60,7 @@ export default function Component() {
       {/* About Us Section with Background Image */}
       <section
         className="relative py-16 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url(/assets/About/Stadium.jpg)" }}
+        style={{ backgroundImage: "url(/assets/About/Stadium.png)" }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>
         <div className="relative max-w-6xl mx-auto px-6 z-10">

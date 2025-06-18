@@ -36,7 +36,7 @@ export default function CricGemLanding() {
         <div className="absolute inset-0 z-0">
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url(/Assets/homepage/main-starting.png)" }}
+            style={{ backgroundImage: "url(/Assets/homepage/App.png)" }}
           ></div>
           <div className="absolute inset-0 bg-gradient-to-br from-black/30 via-transparent to-black/40"></div>
         </div>
