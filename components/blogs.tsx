@@ -21,7 +21,7 @@ export default function Component() {
       {/* Hero Section */}
       <section className="relative h-[400px] flex items-center justify-center">
         <div className="absolute inset-0">
-          <Image src="/Assets/blogs/image.png" alt="Cricket Stadium" fill className="object-cover" priority />
+          <Image src="/Assets/Blogs/image.png" alt="Cricket Stadium" fill className="object-cover" priority />
           <div className="absolute inset-0 bg-black/40" />
         </div>
         <div className="relative z-10 text-center">
