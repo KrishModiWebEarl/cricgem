@@ -2,12 +2,11 @@ import Image from "next/image"
 
 export default function Component() {
   return (
-    <div className="min-h-screen bg-white mt-[80px]">
-      {/* Hero Section */}
+    <div className="min-h-screen mt-[80px]">
       <section
         className="relative h-[400px] bg-cover bg-center bg-no-repeat flex items-center justify-center text-white"
         style={{
-          backgroundImage: "url(/Assets/howtoplay/cricket.png)",
+          backgroundImage: "url(/assets/howtoplay/cricket.png)",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>
@@ -37,82 +36,79 @@ export default function Component() {
       </section>
 
       {/* Step-by-Step Guide */}
-      <section className="py-16 bg-[#f8f9fa]">
+      <section className="py-16 relative">
+        {/* Center Connecting Line */}
+        <div className=""></div>
+
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-[#605a87] mb-16">
             STEP-BY-STEP GUIDE TO PLAY FANTASY CRICKET
           </h2>
 
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-6xl mx-auto relative">
             {/* Step 1 */}
-            <div className="flex flex-col lg:flex-row items-center gap-12 mb-20 relative">
-              <div className="lg:w-1/2 flex justify-center relative">
-                <div className="w-64 h-96 relative">
+            <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8 lg:gap-24 xl:gap-28 mb-12 sm:mb-16 lg:mb-32 xl:mb-36">
+              <div className="lg:w-1/2 flex justify-center lg:justify-end sm:pr-4 lg:pr-12">
+                <div className="relative">
                   <Image
-                    src="/Assets/howtoplay/phone1.png?height=400&width=250"
+                    src="/Assets/howtoplay/Group 91.png"
                     alt="Select Match Mobile Screen"
-                    width={250}
-                    height={400}
-                    className="rounded-3xl shadow-lg"
+                    width={350}
+                    height={550}
+                    className="object-contain w-full max-w-[280px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[420px] h-auto"
                   />
                 </div>
-                {/* Connecting line */}
-                <div className="hidden lg:block absolute -right-6 top-1/2 w-12 h-0.5 bg-gray-300"></div>
               </div>
-              <div className="lg:w-1/2 text-center lg:text-left">
-                <div className="text-8xl font-bold text-[#e0e0e0] mb-4">1</div>
-                <h3 className="text-2xl font-bold text-[#000000] mb-4">Select A Match</h3>
-                <p className="text-[#5c5c5c] text-lg">
+              <div className="lg:w-1/2 text-center lg:text-left lg:pl-8">
+                <div className="text-5xl sm:text-6xl lg:text-8xl xl:text-9xl font-bold text-[#e0e0e0] mb-4">1</div>
+                <h3 className="text-xl lg:text-2xl font-bold text-[#000000] mb-4">Select A Match</h3>
+                <p className="text-[#5c5c5c] text-base lg:text-lg max-w-md">
                   To participate in a match, simply click on the match want to make your teams in.
                 </p>
               </div>
             </div>
 
             {/* Step 2 */}
-            <div className="flex flex-col lg:flex-row-reverse items-center gap-12 mb-20 relative">
-              <div className="lg:w-1/2 flex justify-center relative">
-                <div className="w-64 h-96 relative">
+            <div className="flex flex-col lg:flex-row-reverse items-center gap-6 sm:gap-8 lg:gap-24 xl:gap-28 mb-12 sm:mb-16 lg:mb-32 xl:mb-36">
+              <div className="lg:w-1/2 flex justify-center lg:justify-start lg:pl-8">
+                <div className="relative">
                   <Image
-                    src="/Assets/howtoplay/phone2.png?height=400&width=250"
+                    src="/Assets/howtoplay/Group 92.png"
                     alt="Select Contest Mobile Screen"
-                    width={250}
-                    height={400}
-                    className="rounded-3xl shadow-lg"
+                    width={350}
+                    height={550}
+                    className="object-contain w-full max-w-[280px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[420px] h-auto"
                   />
                 </div>
-                {/* Connecting line */}
-                <div className="hidden lg:block absolute -left-6 top-1/2 w-12 h-0.5 bg-gray-300"></div>
               </div>
-              <div className="lg:w-1/2 text-center lg:text-right">
-                <div className="text-8xl font-bold text-[#e0e0e0] mb-4">2</div>
-                <h3 className="text-2xl font-bold text-[#000000] mb-4">Select A Contest</h3>
-                <p className="text-[#5c5c5c] text-lg">
+              <div className="lg:w-1/2 text-center lg:text-right lg:pr-8">
+                <div className="text-5xl sm:text-6xl lg:text-8xl xl:text-9xl font-bold text-[#e0e0e0] mb-4">2</div>
+                <h3 className="text-xl lg:text-2xl font-bold text-[#000000] mb-4">Select A Contest</h3>
+                <p className="text-[#5c5c5c] text-base lg:text-lg max-w-md lg:ml-auto">
                   Once you enter a match, you can select from the 'Contests' available on the application.
                 </p>
               </div>
             </div>
 
             {/* Step 3 */}
-            <div className="flex flex-col lg:flex-row items-center gap-12 mb-20 relative">
-              <div className="lg:w-1/2 flex justify-center relative">
-                <div className="w-64 h-96 relative">
+            <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8 lg:gap-24 xl:gap-28 mb-12 sm:mb-16 lg:mb-32 xl:mb-36">
+              <div className="lg:w-1/2 flex justify-center lg:justify-end sm:pr-4 lg:pr-12">
+                <div className="relative">
                   <Image
-                    src="/Assets/howtoplay/phone3.png?height=400&width=250"
+                    src="/Assets/howtoplay/Group 93.png"
                     alt="Select Playing XI Mobile Screen"
-                    width={250}
-                    height={400}
-                    className="rounded-3xl shadow-lg"
+                    width={350}
+                    height={550}
+                    className="object-contain w-full max-w-[280px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[420px] h-auto"
                   />
                 </div>
-                {/* Connecting line */}
-                <div className="hidden lg:block absolute -right-6 top-1/2 w-12 h-0.5 bg-gray-300"></div>
               </div>
-              <div className="lg:w-1/2 text-center lg:text-left">
-                <div className="text-8xl font-bold text-[#e0e0e0] mb-4">3</div>
-                <h3 className="text-2xl font-bold text-[#000000] mb-4">
+              <div className="lg:w-1/2 text-center lg:text-left lg:pl-8">
+                <div className="text-5xl sm:text-6xl lg:text-8xl xl:text-9xl font-bold text-[#e0e0e0] mb-4">3</div>
+                <h3 className="text-xl lg:text-2xl font-bold text-[#000000] mb-4">
                   Select Your Playing XI & create 'multiple' teams
                 </h3>
-                <p className="text-[#5c5c5c] text-lg">
+                <p className="text-[#5c5c5c] text-base lg:text-lg max-w-md">
                   After selecting the contest, create your own fantasy team by selecting XI players of different
                   'categories'. Each player that you select, has 'credits' attached to him/her. Users can create a
                   maximum of 35 fantasy teams.
@@ -121,46 +117,46 @@ export default function Component() {
             </div>
 
             {/* Step 4 */}
-            <div className="flex flex-col lg:flex-row-reverse items-center gap-12 mb-20 relative">
-              <div className="lg:w-1/2 flex justify-center relative">
-                <div className="w-64 h-96 relative">
+            <div className="flex flex-col lg:flex-row-reverse items-center gap-6 sm:gap-8 lg:gap-24 xl:gap-28 mb-12 sm:mb-16 lg:mb-32 xl:mb-36">
+              <div className="lg:w-1/2 flex justify-center lg:justify-start lg:pl-8">
+                <div className="relative">
                   <Image
-                    src="/Assets/howtoplay/phone4.png?height=400&width=250"
+                    src="/Assets/howtoplay/Group 94.png"
                     alt="Select Captain Mobile Screen"
-                    width={250}
-                    height={400}
-                    className="rounded-3xl shadow-lg"
+                    width={350}
+                    height={550}
+                    className="object-contain w-full max-w-[280px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[420px] h-auto"
                   />
                 </div>
-                {/* Connecting line */}
-                <div className="hidden lg:block absolute -left-6 top-1/2 w-12 h-0.5 bg-gray-300"></div>
               </div>
-              <div className="lg:w-1/2 text-center lg:text-right">
-                <div className="text-8xl font-bold text-[#e0e0e0] mb-4">4</div>
-                <h3 className="text-2xl font-bold text-[#000000] mb-4">Select Your Captain and Vice-Captain</h3>
-                <p className="text-[#5c5c5c] text-lg">
+              <div className="lg:w-1/2 text-center lg:text-right lg:pr-8">
+                <div className="text-5xl sm:text-6xl lg:text-8xl xl:text-9xl font-bold text-[#e0e0e0] mb-4">4</div>
+                <h3 className="text-xl lg:text-2xl font-bold text-[#000000] mb-4">
+                  Select Your Captain and Vice-Captain
+                </h3>
+                <p className="text-[#5c5c5c] text-base lg:text-lg max-w-md lg:ml-auto">
                   The chosen captain will get 2x points during the match and the vice-captain will get x1.5 points
                 </p>
               </div>
             </div>
 
-            {/* Step 6 */}
-            <div className="flex flex-col lg:flex-row items-center gap-12 relative">
-              <div className="lg:w-1/2 flex justify-center relative">
-                <div className="w-64 h-96 relative">
+            {/* Step 5 */}
+            <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8 lg:gap-24 xl:gap-28">
+              <div className="lg:w-1/2 flex justify-center lg:justify-end sm:pr-4 lg:pr-12">
+                <div className="relative">
                   <Image
-                    src="/Assets/howtoplay/phone5.png?height=400&width=250"
+                    src="/Assets/howtoplay/Group 97.png"
                     alt="Join League Mobile Screen"
-                    width={250}
-                    height={400}
-                    className="rounded-3xl shadow-lg"
+                    width={350}
+                    height={550}
+                    className="object-contain w-full max-w-[280px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[420px] h-auto"
                   />
                 </div>
               </div>
-              <div className="lg:w-1/2 text-center lg:text-left">
-                <div className="text-8xl font-bold text-[#e0e0e0] mb-4">5</div>
-                <h3 className="text-2xl font-bold text-[#000000] mb-4">Join The League</h3>
-                <p className="text-[#5c5c5c] text-lg">
+              <div className="lg:w-1/2 text-center lg:text-left lg:pl-8">
+                <div className="text-5xl sm:text-6xl lg:text-8xl xl:text-9xl font-bold text-[#e0e0e0] mb-4">5</div>
+                <h3 className="text-xl lg:text-2xl font-bold text-[#000000] mb-4">Join The League</h3>
+                <p className="text-[#5c5c5c] text-base lg:text-lg max-w-md">
                   As you are ready with your fantasy teams now, join the contest in your selected league and begin your
                   winning journey with CRICGEM.
                 </p>

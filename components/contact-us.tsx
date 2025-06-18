@@ -6,7 +6,7 @@ import Image from "next/image"
 
 export default function Component() {
   return (
-    <div className="min-h-screen bg-[#fffcfc] mt-[80px]">
+    <div className="min-h-screen mt-[80px]">
       {/* Header */}
       <header className="bg-[#1b1253] px-6 py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">

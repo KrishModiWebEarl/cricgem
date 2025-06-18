@@ -16,11 +16,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <Navbar />
-        {children}
-        <Footer />
+      <body className="min-h-screen bg-cover bg-center bg-no-repeat bg-fixed" style={{ backgroundImage: "url('/Assets/bg.jpg')" }}>
+        <div className="">
+          <Navbar />
+          <main className="relative z-10">
+            {children}
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
-  )
+  );
 }

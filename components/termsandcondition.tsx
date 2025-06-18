@@ -6,7 +6,7 @@ import { Youtube, Instagram, Facebook, Play } from "lucide-react"
 
 export default function TermsAndConditions() {
   return (
-    <div className="min-h-screen bg-[#fffcfc] mt-[80px]">
+    <div className="min-h-screen mt-[80px]">
     
 
       {/* Hero Section */}

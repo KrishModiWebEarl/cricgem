@@ -5,7 +5,7 @@ import { Youtube, Instagram, Facebook, Play } from "lucide-react"
 
 export default function Component() {
   return (
-    <div className="min-h-screen bg-white mt-[80px]" >
+    <div className="min-h-screen mt-[80px]" >
       {/* Header */}
       
         
