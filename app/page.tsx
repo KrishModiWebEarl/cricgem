@@ -343,7 +343,7 @@ export default function CricGemLanding() {
       {/* Easy to Play Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center text-[#605a87] mb-16">EASY TO PLAY</h2>
+          <h2 className="text-4xl font-bold text-center text-[#605a87] mb-16 drop-shadow-lg text-[47px]">EASY TO PLAY</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
@@ -506,7 +506,7 @@ export default function CricGemLanding() {
       {/* FAQ Section */}
       <section className="py-20 ">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center text-[#605a87] mb-16">Frequently Asked Questions</h2>
+          <h2 className="text-4xl font-bold text-center text-[#605a87] mb-16 drop-shadow-lg text-[47px]">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {[
               {

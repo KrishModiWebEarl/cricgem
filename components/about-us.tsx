@@ -77,7 +77,7 @@ export default function Component() {
       <div className="max-w-6xl mx-auto px-6 py-12 space-y-12">
         {/* Who we are Section */}
         <section className="bg-[#605a87] rounded-2xl p-8 text-white relative overflow-visible border border-black">
-          <div className="absolute -top-6 left-6 inline-block bg-white text-[#605a87] px-6 py-3 rounded-lg text-sm font-semibold z-10 border border-black">
+          <div className="absolute -top-6 left-6 inline-block bg-white text-[#605a87] px-6 py-3 rounded-lg text-sm font-semibold z-10 border border-black font-montserrat drop-shadow-lg text-[20px]">
             Who we are
           </div>
           <div className="flex flex-col lg:flex-row items-center gap-8">
@@ -108,7 +108,7 @@ export default function Component() {
 
         {/* Our Mission Section */}
         <section className="bg-[#c8b5e8] rounded-2xl p-8 relative overflow-visible border border-black">
-          <div className="absolute -top-6 right-6 inline-block bg-white text-[#1b1253] px-6 py-3 rounded-lg text-sm font-semibold z-10 border border-black">
+          <div className="absolute -top-6 right-6 inline-block bg-white text-[#1b1253] px-6 py-3 rounded-lg text-sm font-semibold z-10 border border-black font-montserrat drop-shadow-lg text-[20px]">
             Our Mission
           </div>
           <div className="flex flex-col lg:flex-row items-center gap-8">
@@ -181,7 +181,7 @@ export default function Component() {
       </div>
 
       {/* Reviews Section */}
-      <section className="bg-[#f1f1f1] py-16">
+      <section className=" py-16">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-[#605a87] mb-4">REVIEWS & RATING</h2>
@@ -202,7 +202,7 @@ export default function Component() {
               <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6">
                 {getCurrentReviews().map((review, index) => (
                   <Card key={currentReviewIndex + index} className="bg-white shadow-sm border border-black">
-                    <CardContent className="p-6">
+                    <CardContent className=" bg-[#f1f1f1] p-6 rounded-xl">
                       <div className="flex items-center gap-3 mb-4">
                         <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
                           <span className="text-blue-600 font-bold text-sm">{review.initials}</span>

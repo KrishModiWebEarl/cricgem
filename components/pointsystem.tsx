@@ -203,7 +203,7 @@ export default function Component() {
         </Card>
 
         {/* Point Sections */}
-        <div className="space-y-4 mt-8">
+        <div className="space-y-4 mt-8 text-[20px] font-bold">
           {pointSections.map((section) => (
             <Card key={section} className="border border-[#d3d3d3] bg-white">
               <Collapsible open={openSection === section} onOpenChange={() => setOpenSection(openSection === section ? null : section)}>

@@ -19,7 +19,7 @@ export default function Component() {
       {/* Introduction Section */}
       <section className="py-16 px-2 sm:px-4">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-2xl font-bold text-[#605a87] mb-6">Introduction</h2>
+          <h2 className="text-2xl font-bold text-[#605a87] mb-6 text-[30px]">Introduction</h2>
           <div className="space-y-4 text-[#5c5c5c] leading-relaxed text-[20px]">
             <p>
               The 'How To Play' section guides our users about the fantasy teams and how to play fantasy sports on
@@ -38,7 +38,7 @@ export default function Component() {
       {/* Step-by-Step Guide */}
       <section className="py-16 relative">
         <div className="container mx-auto px-2 sm:px-4">
-          <h2 className="text-3xl font-bold text-center text-[#605a87] mb-16 font-Poppins drop-shadow-lg">
+          <h2 className="text-3xl font-bold text-center text-[#605a87] mb-16 font-Poppins drop-shadow-lg text-[40px]">
             STEP-BY-STEP GUIDE TO PLAY FANTASY CRICKET
           </h2>
 
@@ -58,8 +58,8 @@ export default function Component() {
               </div>
               <div className="lg:w-1/2 text-center lg:text-left lg:pl-4">
                 <div className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-[#e0e0e0] mb-4">1</div>
-                <h3 className="text-xl lg:text-2xl font-bold text-[#000000] mb-4">Select A Match</h3>
-                <p className="text-[#5c5c5c] text-base lg:text-lg max-w-lg">
+                <h3 className="text-xl lg:text-2xl font-bold text-[#000000] mb-4 text-[30px]">Select A Match</h3>
+                <p className="text-[#5c5c5c] text-base lg:text-lg max-w-lg text-[20px]">
                   To participate in a match, simply click on the match want to make your teams in.
                 </p>
               </div>
@@ -80,8 +80,8 @@ export default function Component() {
               </div>
               <div className="lg:w-1/2 text-center lg:text-right lg:pr-4">
                 <div className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-[#e0e0e0] mb-4">2</div>
-                <h3 className="text-xl lg:text-2xl font-bold text-[#000000] mb-4">Select A Contest</h3>
-                <p className="text-[#5c5c5c] text-base lg:text-lg max-w-lg lg:ml-auto">
+                <h3 className="text-xl lg:text-2xl font-bold text-[#000000] mb-4 text-[30px]">Select A Contest</h3>
+                <p className="text-[#5c5c5c] text-base lg:text-lg max-w-lg lg:ml-auto text-[20px]">
                   Once you enter a match, you can select from the 'Contests' available on the application.
                 </p>
               </div>
@@ -102,10 +102,10 @@ export default function Component() {
               </div>
               <div className="lg:w-1/2 text-center lg:text-left lg:pl-4">
                 <div className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-[#e0e0e0] mb-4">3</div>
-                <h3 className="text-xl lg:text-2xl font-bold text-[#000000] mb-4">
+                <h3 className="text-xl lg:text-2xl font-bold text-[#000000] mb-4 text-[30px]">
                   Select Your Playing XI & create 'multiple' teams
                 </h3>
-                <p className="text-[#5c5c5c] text-base lg:text-lg max-w-lg">
+                <p className="text-[#5c5c5c] text-base lg:text-lg max-w-lg text-[20px]">
                   After selecting the contest, create your own fantasy team by selecting XI players of different
                   'categories'. Each player that you select, has 'credits' attached to him/her. Users can create a
                   maximum of 35 fantasy teams.
@@ -128,10 +128,10 @@ export default function Component() {
               </div>
               <div className="lg:w-1/2 text-center lg:text-right lg:pr-4">
                 <div className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-[#e0e0e0] mb-4">4</div>
-                <h3 className="text-xl lg:text-2xl font-bold text-[#000000] mb-4">
+                <h3 className="text-xl lg:text-2xl font-bold text-[#000000] mb-4 text-[30px]">
                   Select Your Captain and Vice-Captain
                 </h3>
-                <p className="text-[#5c5c5c] text-base lg:text-lg max-w-lg lg:ml-auto">
+                <p className="text-[#5c5c5c] text-base lg:text-lg max-w-lg lg:ml-auto text-[20px]">
                   The chosen captain will get 2x points during the match and the vice-captain will get x1.5 points
                 </p>
               </div>
@@ -152,8 +152,8 @@ export default function Component() {
               </div>
               <div className="lg:w-1/2 text-center lg:text-left lg:pl-4">
                 <div className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-[#e0e0e0] mb-4">5</div>
-                <h3 className="text-xl lg:text-2xl font-bold text-[#000000] mb-4">Join The League</h3>
-                <p className="text-[#5c5c5c] text-base lg:text-lg max-w-lg">
+                <h3 className="text-xl lg:text-2xl font-bold text-[#000000] mb-4 text-[30px]">Join The League</h3>
+                <p className="text-[#5c5c5c] text-base lg:text-lg max-w-lg text-[20px]">
                   As you are ready with your fantasy teams now, join the contest in your selected league and begin your
                   winning journey with CRICGEM.
                 </p>
