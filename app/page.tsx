@@ -45,6 +45,15 @@ export default function CricGemLanding() {
           {/* Left Content */}
           <div className="text-white max-w-4xl pt-32 lg:pt-40">
             {/* Logo and CRICGEM */}
+            <Link href="/" className="flex items-center space-x-2">
+            <Image
+              src="/Assets/logo.png"
+              alt="CricGem Logo"
+              width={80}
+              height={80}
+              className="object-contain"
+            />
+          </Link>
             <div className="flex items-center mb-12 lg:mb-16">
               <img
                 src="/assets/logo.png"
@@ -56,7 +65,7 @@ export default function CricGemLanding() {
                 style={{
                   fontFamily: "Inknut Antiqua, serif",
                   fontWeight: 700,
-                  textShadow: "3px 3px 0px #000000, -2px -2px 0px #000000, 2px -2px 0px #000000, -2px 2px 0px #000000",
+                  textShadow: "3px 3px 0px #000000",
                   WebkitTextStroke: "1.5px #000000",
                   letterSpacing: "0.02em",
                 }}
