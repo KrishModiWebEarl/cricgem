@@ -1,28 +1,27 @@
 "use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import clsx from "clsx"; // Optional, for cleaner className conditionals
-
+ 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-
+ 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
-
+ 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
+ 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
-
+ 
   return (
     <header
       className={clsx(
@@ -35,13 +34,13 @@ export default function Navbar() {
           <Image
             src="/Assets/logo.png"
             alt="CricGem Logo"
-            width={50}
-            height={50}
-            className="w-15 h-15 object-contain"
+            width={80}
+            height={80}
+            className="object-contain"
           />
           {/* <span className="text-white text-2xl font-bold">CRICGEM</span> */}
         </Link>
-        <div className="hidden md:flex items-center space-x-8 text-white">
+        <div className="hidden md:flex items-center space-x-8 text-white text-lg">
           {[
             { href: "/how-to-play", label: "How-to-Play" },
             { href: "/point-system", label: "Point System" },
@@ -57,7 +56,7 @@ export default function Navbar() {
             </Link>
           ))}
         </div>
-
+ 
         {/* Mobile menu button */}
         <div className="md:hidden">
           <button onClick={toggleMobileMenu} className="text-white focus:outline-none">
@@ -65,11 +64,11 @@ export default function Navbar() {
           </button>
         </div>
       </nav>
-
+ 
       {/* Mobile menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-[#1b1253] px-6 py-4">
-          <div className="flex flex-col space-y-4 text-white">
+          <div className="flex flex-col space-y-4 text-white text-lg">
             {[
               { href: "/how-to-play", label: "How to Play" },
               { href: "/point-system", label: "Point System" },
@@ -90,3 +89,4 @@ export default function Navbar() {
     </header>
   );
 }
+ 

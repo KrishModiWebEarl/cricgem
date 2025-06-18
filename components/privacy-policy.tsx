@@ -7,45 +7,25 @@ export default function Component() {
   return (
     <div className="min-h-screen bg-white mt-[80px]" >
       {/* Header */}
-      <header className="bg-[#1b1253] px-6 py-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center">
-            <Image
-              src="Assets/policies/bat.png"
-              alt="Cricgem Logo"
-              width={40}
-              height={40}
-              className="mr-2"
-            />
-          </div>
-          <nav className="hidden md:flex space-x-8">
-            <Link href="#" className="text-white hover:text-gray-300 transition-colors">
-              How to Play
-            </Link>
-            <Link href="#" className="text-white hover:text-gray-300 transition-colors">
-              Point System
-            </Link>
-            <Link href="#" className="text-white hover:text-gray-300 transition-colors">
-              About Us
-            </Link>
-            <Link href="#" className="text-white hover:text-gray-300 transition-colors">
-              Blog
-            </Link>
-          </nav>
-        </div>
-      </header>
+      
+        
 
       {/* Hero Section */}
-      <section className="relative h-48 bg-gradient-to-r from-red-600 via-orange-500 to-green-600 flex items-center justify-center">
-        <div className="absolute inset-0 bg-gradient-to-r from-red-600/80 via-orange-500/80 to-green-600/80"></div>
-        <div className="relative text-center text-white z-10">
-          <h1 className="text-4xl md:text-5xl font-bold mb-2">PRIVACY POLICY</h1>
-          <p className="text-lg md:text-xl">YOUR DATA, OUR RESPONSIBILITY!</p>
-        </div>
-      </section>
+      <section
+  className="relative h-48 bg-cover bg-center flex items-center justify-center"
+  style={{ backgroundImage: "url('/Assets/policies/bat.png')" }} // ✅ Set your actual path
+>
+  {/* Optional: Add overlay for readability */}
+  <div className="absolute inset-0 bg-black/40"></div>
+
+  <div className="relative text-center text-white z-10">
+    <h1 className="text-4xl md:text-5xl font-bold mb-2">PRIVACY POLICY</h1>
+    <p className="text-lg md:text-xl">YOUR DATA, OUR RESPONSIBILITY!</p>
+  </div>
+</section>
 
       {/* Content */}
-      <main className="max-w-4xl mx-auto px-6 py-12">
+      <main className="max-w-6xl mx-auto px-4 md:px-8 py-1">
         <div className="space-y-8">
           {/* Privacy Policy Section */}
           <section>
