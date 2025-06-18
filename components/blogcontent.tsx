@@ -8,7 +8,7 @@ interface BlogContentProps {
 
 export default function BlogContent({ slug }: BlogContentProps) {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white mt-[80px]">
       {/* Header */}
       <header className="bg-[#2D1B69] text-white">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">

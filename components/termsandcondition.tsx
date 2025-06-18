@@ -6,7 +6,7 @@ import { Youtube, Instagram, Facebook, Play } from "lucide-react"
 
 export default function TermsAndConditions() {
   return (
-    <div className="min-h-screen bg-[#fffcfc]">
+    <div className="min-h-screen bg-[#fffcfc] mt-[80px]">
       {/* Header */}
       <header className="bg-[#1b1253] text-white px-6 py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">

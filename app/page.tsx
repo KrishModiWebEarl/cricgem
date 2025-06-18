@@ -32,29 +32,90 @@ export default function CricGemLanding() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative h-screen overflow-hidden">
+        <section className="relative h-screen overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url(/Assets/homepage/main-starting.png)' }}></div>
-          <div className="absolute inset-0 bg-gradient-to-br from-[#1b1253]/80 via-[#140b40]/80 to-[#1d1459]/80"></div>
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: "url(/Assets/homepage/main-starting.png)" }}
+          ></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-black/30 via-transparent to-black/40"></div>
         </div>
-        <div className="relative z-10 flex items-center justify-center h-full px-6">
-          <div className="text-center text-white max-w-4xl mx-auto">
-            <div className="flex items-center justify-center mb-8">
-              <div className="w-16 h-16 bg-[#fef0b7] rounded-lg flex items-center justify-center mr-4">
-                <div className="w-10 h-10 bg-[#1b1253] rounded"></div>
-              </div>
-              <h1 className="text-6xl font-bold text-[#fef0b7]">CRICGEM</h1>
+
+        <div className="relative z-10 flex flex-col lg:flex-row items-start justify-between h-full px-4 sm:px-8 lg:px-12">
+          {/* Left Content */}
+          <div className="text-white max-w-4xl pt-32 lg:pt-40">
+            {/* Logo and CRICGEM */}
+            <div className="flex items-center mb-12 lg:mb-16">
+              <img
+                src="/assets/logo.png"
+                alt="CricGem Logo"
+                className="w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 object-contain mr-4 lg:mr-6"
+              />
+              <h1
+                className="text-[#fef0b7] text-3xl sm:text-4xl lg:text-5xl xl:text-6xl"
+                style={{
+                  fontFamily: "Inknut Antiqua, serif",
+                  fontWeight: 700,
+                  textShadow: "3px 3px 0px #000000, -2px -2px 0px #000000, 2px -2px 0px #000000, -2px 2px 0px #000000",
+                  WebkitTextStroke: "1.5px #000000",
+                  letterSpacing: "0.02em",
+                }}
+              >
+                CRICGEM
+              </h1>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Real Cricket</h2>
-            <h3 className="text-4xl md:text-5xl font-bold mb-12">Fantasy Platform</h3>
-            <div className="absolute bottom-12 right-8 flex flex-col sm:flex-row gap-4">
-              <Button className="bg-[#000000] hover:bg-[#140000] text-white px-8 py-3 rounded-lg flex items-center">
-                <Play className="w-5 h-5 mr-2" />
-                Get it on Google Play
-              </Button>
-              <Button className="bg-[#000000] hover:bg-[#140000] text-white px-8 py-3 rounded-lg">
-                Download on App Store
-              </Button>
+
+            {/* Main Heading */}
+            <div className="space-y-2 lg:space-y-4">
+              <h2
+                className="text-white leading-none text-4xl sm:text-5xl lg:text-6xl xl:text-7xl"
+                style={{
+                  fontFamily: "Poppins, sans-serif",
+                  fontWeight: 600,
+                  letterSpacing: "-0.02em",
+                }}
+              >
+                Real Cricket
+              </h2>
+              <h3
+                className="text-white leading-none text-4xl sm:text-5xl lg:text-6xl xl:text-7xl"
+                style={{
+                  fontFamily: "Poppins, sans-serif",
+                  fontWeight: 600,
+                  letterSpacing: "-0.02em",
+                }}
+              >
+                Fantasy Platform
+              </h3>
+            </div>
+          </div>
+
+          {/* App Store Buttons - Bottom Right */}
+          <div className="absolute bottom-8 right-4 sm:bottom-12 sm:right-8 lg:bottom-16 lg:right-12 flex flex-col sm:flex-row gap-3">
+            {/* Google Play Store Button */}
+            <div className="bg-transparent border-2 border-white/80 rounded-lg px-4 py-3 flex items-center gap-3 min-w-[160px] hover:bg-white/10 transition-all duration-300 cursor-pointer">
+              <div className="w-6 h-6 flex items-center justify-center">
+                <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white">
+                  <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
+                </svg>
+              </div>
+              <div className="text-left">
+                <div className="text-xs text-white/90 font-medium">GET IT ON</div>
+                <div className="text-sm font-bold text-white">Google Play</div>
+              </div>
+            </div>
+
+            {/* App Store Button */}
+            <div className="bg-transparent border-2 border-white/80 rounded-lg px-4 py-3 flex items-center gap-3 min-w-[160px] hover:bg-white/10 transition-all duration-300 cursor-pointer">
+              <div className="w-6 h-6 flex items-center justify-center">
+                <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white">
+                  <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z" />
+                </svg>
+              </div>
+              <div className="text-left">
+                <div className="text-xs text-white/90 font-medium">Download on the</div>
+                <div className="text-sm font-bold text-white">App Store</div>
+              </div>
             </div>
           </div>
         </div>

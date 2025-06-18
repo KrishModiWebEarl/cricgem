@@ -14,7 +14,7 @@ export default function Component() {
   })
 
   return (
-    <div className="min-h-screen bg-[#fffcfc]">
+    <div className="min-h-screen bg-[#fffcfc] mt-[80px]">
       {/* Header */}
       
 

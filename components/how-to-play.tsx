@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Component() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white mt-[80px]">
       {/* Hero Section */}
       <section
         className="relative h-[400px] bg-cover bg-center bg-no-repeat flex items-center justify-center text-white"

@@ -163,7 +163,7 @@ export default function Component() {
   }
 
   return (
-    <div className="min-h-screen bg-[#fffcfc]">
+    <div className="min-h-screen bg-[#fffcfc] mt-[80px]">
       {/* Header */}
       
 
@@ -172,7 +172,7 @@ export default function Component() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('Assets/PointSystem/ground.jpg')",
+            backgroundImage: "url('/Assets/PointSystem/ground2.jpg')",
           }}
         />
         <div className="" />
